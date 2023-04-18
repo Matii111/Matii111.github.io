@@ -34,9 +34,17 @@
     filter: brightness(50%);    
 }
 
+/* lightMode */
 body {
-    background-color: #0d1117;
-}
+    background-color: #f6f8fa;
+  }
+  
+  /* darkMode */
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #0d1117;
+    }
+  }
 .containerWorking a{
     display: flex;
     justify-content: center;

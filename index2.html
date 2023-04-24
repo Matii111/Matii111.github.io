@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="index2.css">
+</head>
+
+<body>
+    <div>
+        <div class="top-bar-container">
+            <div class="profile-info">
+                <label>
+                    -Nivel de estudios:
+                </label>
+                <label>
+                    -Especialidad:
+                </label>
+                <label>
+                    -Estado:
+                </label>
+            </div>
+            <div class="top-bar-container-img">
+                <img class="pfp" src="imgs/working.jpg" alt="Circular Image">
+            </div>
+        </div>
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Resumen')" id="defaultOpen">Resumen</button>
+            <button class="tablinks" onclick="openCity(event, 'Proyectos')">Proyectos</button>
+            <button class="tablinks" onclick="openCity(event, 'Herramientas')">Herramientas</button>
+            <button class="tablinks" onclick="openCity(event, '(?)')">(?)</button>
+        </div>
+        <div>
+            <div id="Resumen" class="tabcontent">
+                <h3>Resumen</h3>
+                <p>London is the capital city of England.</p>
+            </div>
+
+            <div id="Proyectos" class="tabcontent">
+                <h3>Proyectos</h3>
+                <p>Proyectos is the capital of France.</p>
+            </div>
+
+            <div id="Herramientas" class="tabcontent">
+                <h3>Herramientas</h3>
+                <p>Herramientas is the capital of Japan.</p>
+            </div>
+            <div id="(?)" class="tabcontent">
+                <h3>(?)</h3>
+                <p>(?)</p>
+            </div>
+            <script src="index.js"> </script>
+            <script>
+                document.getElementById("defaultOpen").click();
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>

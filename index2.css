@@ -7,9 +7,8 @@
 }
 
 .pfp {
-    width: 25%;
+    width: 100%;
     border-radius: 50%;
-    overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     padding: 5px;
 }
@@ -36,7 +35,7 @@
     display: flex;
     justify-content: center;
 }
-    
+
 .tab button {
     background-color: inherit;
     float: left;
@@ -69,26 +68,89 @@
 
 
 .tabcontent {
-    animation: fadeEffect 1s; /* Fading effect takes 1 second */
-  }
-  
-  /* Go from zero to full opacity */
-  @keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
-  }
+    animation: fadeEffect 1s;
+    /* Fading effect takes 1 second */
+}
 
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
 
-
+    to {
+        opacity: 1;
+    }
+}
 
 /* lightMode */
 body {
     background-color: #f6f8fa;
-  }
-  
-  /* darkMode */
-  @media (prefers-color-scheme: dark) {
+}
+
+/* darkMode */
+@media (prefers-color-scheme: dark) {
     body {
-      background-color: #0d1117;
+        background-color: #0d1117;
     }
-  }
+}
+
+/* slideshowconfigs */
+
+* {
+    box-sizing: border-box
+}
+
+/* Slideshow container */
+
+.slideshow-container {
+    width: 50%;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 20%;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}

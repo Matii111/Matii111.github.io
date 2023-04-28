@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="index2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <div class="top-bar-container">
+            <div class="profile-info">
+                <ul>
+                    <li>Nivel de estudios: 
+                        Lorem ipsum dolor sit amet consectetur.
+                    </li>
+                    <br>
+                    <li>Especialidades: 
+                       Lorem ipsum dolor sit amet consectetur.
+                    </li>
+                    <br>
+                    <li>Estado: 
+                        Lorem ipsum dolor sit amet consectetur.
+                    </li>
+                </ul>
+            </div>
+            <div class="top-bar-container-img">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img class="pfp" src="imgs/working.jpg" alt="Circular Image">
+                    </div>
+                    <div class="mySlides fade">
+                        <img class="pfp" src="imgs/working.jpg" alt="Circular Image">
+
+                    </div>                    
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>      
+                </div>
+            </div>
+        </div>
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Resumen')" id="defaultOpen">Resumen</button>
+            <button class="tablinks" onclick="openCity(event, 'Proyectos')">Proyectos</button>
+            <button class="tablinks" onclick="openCity(event, 'Herramientas')">Herramientas</button>
+            <button class="tablinks" onclick="openCity(event, '(?)')">(?)</button>
+        </div>
+        <div>
+            <div id="Resumen" class="tabcontent">
+                <h1>Resumen</h1>
+                <hr>
+                <p>
+                <h2>Habilidades</h2>
+                <ul>
+                    <li>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam praesentium numquam necessitatibus dolorum perspiciatis accusantium, explicabo, maxime enim fugiat quibusdam hic dignissimos doloribus doloremque dolore soluta nesciunt asperiores libero quae?                        
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere magni iste magnam quae doloribus illum iusto ea, quibusdam laudantium nostrum corrupti, fuga tempore debitis, eius pariatur asperiores assumenda consequuntur nisi!
+                    </li>
+                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe consectetur accusamus laborum similique, mollitia alias sunt illo enim ipsum est maxime. Voluptate quae iste non inventore, provident repellat iusto eos?                        
+                    </li>
+                </ul>
+                <h2>Proyectos</h2>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolores iusto, voluptates aspernatur aliquid, soluta fugiat tempora quisquam at nam quaerat ipsam. Et numquam a quia at soluta molestias quas.
+                        <ul>
+                            <li>lorem
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita tenetur placeat velit maiores nostrum molestiae similique rem nisi iusto. Expedita illum corporis modi eligendi! Animi, facilis? Ad tempora ullam reiciendis!                                        
+                                    </li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolore ipsum cupiditate voluptatibus dolores. Eligendi commodi in blanditiis sint, obcaecati similique ab tempora perspiciatis neque odit aperiam nam cum aspernatur.                                        
+                                    </li>
+                                </ul>
+                        </ul>
+                        <ul>
+                            <li>lorem
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita tenetur placeat velit maiores nostrum molestiae similique rem nisi iusto. Expedita illum corporis modi eligendi! Animi, facilis? Ad tempora ullam reiciendis!                                        
+                                    </li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolore ipsum cupiditate voluptatibus dolores. Eligendi commodi in blanditiis sint, obcaecati similique ab tempora perspiciatis neque odit aperiam nam cum aspernatur.                                        
+                                    </li>
+                                </ul>
+                        </ul>
+                    </li>
+                </ul>
+                <h2>Herramientas</h2>
+                <ul>
+                    <li>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam praesentium numquam necessitatibus dolorum perspiciatis accusantium, explicabo, maxime enim fugiat quibusdam hic dignissimos doloribus doloremque dolore soluta nesciunt asperiores libero quae?                        
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere magni iste magnam quae doloribus illum iusto ea, quibusdam laudantium nostrum corrupti, fuga tempore debitis, eius pariatur asperiores assumenda consequuntur nisi!
+                    </li>
+                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe consectetur accusamus laborum similique, mollitia alias sunt illo enim ipsum est maxime. Voluptate quae iste non inventore, provident repellat iusto eos?                        
+                    </li>
+                </ul>
+                </p>
+            </div>
+
+            <div id="Proyectos" class="tabcontent">
+                <h1>Proyectos</h1>
+                <hr>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolores iusto, voluptates aspernatur aliquid, soluta fugiat tempora quisquam at nam quaerat ipsam. Et numquam a quia at soluta molestias quas.
+                        <ul>
+                            <li>lorem
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita tenetur placeat velit maiores nostrum molestiae similique rem nisi iusto. Expedita illum corporis modi eligendi! Animi, facilis? Ad tempora ullam reiciendis!                                        
+                                    </li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolore ipsum cupiditate voluptatibus dolores. Eligendi commodi in blanditiis sint, obcaecati similique ab tempora perspiciatis neque odit aperiam nam cum aspernatur.                                        
+                                    </li>
+                                </ul>
+                        </ul>
+                        <ul>
+                            <li>lorem
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita tenetur placeat velit maiores nostrum molestiae similique rem nisi iusto. Expedita illum corporis modi eligendi! Animi, facilis? Ad tempora ullam reiciendis!                                        
+                                    </li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolore ipsum cupiditate voluptatibus dolores. Eligendi commodi in blanditiis sint, obcaecati similique ab tempora perspiciatis neque odit aperiam nam cum aspernatur.                                        
+                                    </li>
+                                </ul>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="Herramientas" class="tabcontent">
+                <h1>Herramientas</h1>
+                <hr>
+                <ul>
+                    <li>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam praesentium numquam necessitatibus dolorum perspiciatis accusantium, explicabo, maxime enim fugiat quibusdam hic dignissimos doloribus doloremque dolore soluta nesciunt asperiores libero quae?                        
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere magni iste magnam quae doloribus illum iusto ea, quibusdam laudantium nostrum corrupti, fuga tempore debitis, eius pariatur asperiores assumenda consequuntur nisi!
+                    </li>
+                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe consectetur accusamus laborum similique, mollitia alias sunt illo enim ipsum est maxime. Voluptate quae iste non inventore, provident repellat iusto eos?                        
+                    </li>
+                </ul>
+            </div>
+            <div id="(?)" class="tabcontent">
+                <h3>(?)</h3>
+                <p>(?)</p>
+            </div>
+            <script src="index.js"> </script>
+            <script>
+                document.getElementById("defaultOpen").click();
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>

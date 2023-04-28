@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import './index.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <body>
+        <div className="containerWorking">
+          <div className="image-containerWorking">
+            <img className="pfp" src="./components/imgs/working.jpg" alt="Circular Image" />
+          </div>
+          <p className="workingPhrase">404 - Work in progress</p>
+          <a href="https://github.com/Matii111" rel="noreferrer">
+            <img className="git" src="./components/imgs/git.png" />
+          </a>
+        </div>
+      </body>
     </div>
   );
 }
 
 export default App;
+

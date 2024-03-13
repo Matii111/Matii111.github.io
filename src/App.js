@@ -14,6 +14,14 @@ function App() {
             <img className="git" src={git} />
           </a>
         </div>
+        {/* <div>
+          <div className='language-changer'>
+            <h1>current language</h1>
+          </div>
+          <div className='presentation-label'>
+            <h1>Matias</h1>
+          </div>
+        </div> */}
       </body>
     </div>
   );

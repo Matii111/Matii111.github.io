@@ -1,6 +1,7 @@
 import './index.css';
 import working from './imgs/working.jpg';
 import git from './imgs/git.png';
+import ProjectCard from './components/projectCards';
 function App() {
   return (
     <div>
@@ -20,6 +21,12 @@ function App() {
           </div>
           <div className='presentation-label'>
             <h1>Matias</h1>
+          </div>
+          <div className='content-container'> 
+            <h1 className='section-title'>
+              Proyecto destacado
+            </h1>
+            <ProjectCard/>
           </div>
         </div> */}
       </body>

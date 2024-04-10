@@ -16,14 +16,7 @@ function ProjectCard() {
                     </p>
                 </div>
             </div>
-            <h1 className='project-title'>
-                Trayectoria
-            </h1>
-            <hr></hr>
-            <h2 className='project-title'>
-                Trayectoria
-            </h2>
-            <hr></hr>
+
         </div>
     );
 }

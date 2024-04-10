@@ -96,7 +96,7 @@ body {
 
 /* PROJECT CARDS */
 .project-card {
-  background-color: red;
+  background-color: #1E1E1E;
   width: 70%;
   margin-bottom: 10%;
 }
@@ -107,10 +107,6 @@ body {
   align-items: center;
 }
 
-.project-title {
-  margin: 1rem;
-}
-
 .project-img-container {
   margin: 1rem;
 }
@@ -119,7 +115,7 @@ body {
   width: 100%;
 }
 
-.project-description{
+.project-description {
   overflow: hidden;
   margin: 1rem;
 }
@@ -127,4 +123,86 @@ body {
 .project-description>p {
   color: white;
   text-align: justify;
+}
+
+/* CAREER CONTENT */
+
+.career-container {
+  width: 90%;
+}
+
+.career-title {
+  margin: 1rem;
+}
+
+.career-title-hr {
+  margin: 1rem;
+}
+
+.career-subtitle-hr {
+  margin: 2rem;
+}
+
+.career-subtitle {
+  margin: 2rem;
+}
+
+.career-content-container {
+  width: 90%;
+  margin: 2rem;
+}
+
+.career-content-title {}
+
+.career-content {}
+
+.divisor-bar {}
+
+/* TOOLS SECTION */
+
+.tools-container {
+  width: 100%;
+  height: 30rem;
+  background-color: #1E1E1E;
+  margin: 1rem;
+  margin-bottom: 10%;
+}
+
+.tools-title {
+  margin: 1rem;
+}
+
+.tools-content>p {
+  margin: 1rem;
+  margin-top: 10%;
+}
+
+/* FOOTER */
+
+.footer-container {
+  background-color: #1E1E1E;
+  left: 0;
+  bottom: 0;
+  width: 100%;  
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.footer-items {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.footer-items>h3 {}
+
+.items-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.items-icons>img {
+  width: 10%;
+  margin: 1rem;
 }

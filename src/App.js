@@ -2,6 +2,9 @@ import './index.css';
 import working from './imgs/working.jpg';
 import git from './imgs/git.png';
 import ProjectCard from './components/projectCards';
+import CareerCard from './components/careerCards';
+import ToolsIcons from './components/toolsIcons';
+import Footer from './components/footer';
 function App() {
   return (
     <div>
@@ -22,12 +25,34 @@ function App() {
           <div className='presentation-label'>
             <h1>Matias</h1>
           </div>
-          <div className='content-container'> 
+          <div className='content-container'>
             <h1 className='section-title'>
               Proyecto destacado
             </h1>
-            <ProjectCard/>
+            <ProjectCard />
+            <div className='career-container'>
+              <h1 className='career-title'>
+                Trayectoria
+              </h1>
+              <hr className='career-title-hr' />
+              <h2 className='career-subtitle'>
+                Formacion
+              </h2>
+              <hr className='career-subtitle-hr' />
+              <div className='career-content-container'>
+                <h3 className='career-content-title'>Formacion 1</h3>
+                <CareerCard />
+              </div>
+              <hr className='divisor-bar'></hr>
+            </div>
+            <div className='tools-container'>
+              <h1 className='tools-title'>
+                Tecnologias utilizadas
+              </h1>
+              <ToolsIcons />
+            </div>
           </div>
+          <Footer />
         </div> */}
       </body>
     </div>

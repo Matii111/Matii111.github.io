@@ -1,16 +1,18 @@
-import item from '../imgs/120x120.svg';
+import gitHubLogo from '../imgs/logos/github-icon.svg';
+import mailLogo from '../imgs/logos/mail-icon.svg';
+import linkedinLogo from '../imgs/logos/linkedin-icon.svg';
 function Footer() {
     return (
         <div className='footer-container'>
-            <h1>Despedida</h1>
+            <h1>Muchas gracias por llegar hasta aqui</h1>
             <div className='footer-items'>
-                <h3>
+                <p>
                     Redes de contacto
-                </h3>
+                </p>
                 <div className='items-icons'>
-                    <img src={item} />                    
-                    <img src={item} />
-                    <img src={item} />
+                    <img src={gitHubLogo} alt='Redirigir a GitHub'/>                    
+                    <img src={mailLogo} alt='Copiar correo'/>
+                    <img src={linkedinLogo} alt='Redirigir a linkedin'/>
                 </div>
             </div>
         </div>

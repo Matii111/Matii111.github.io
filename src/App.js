@@ -1,15 +1,15 @@
 import './index.css';
 import working from './imgs/working.jpg';
 import git from './imgs/git.png';
-import ProjectCard from './components/projectCards';
+import ProjectCard from './components/featuredProjects/projectCardsFormat';
 import CareerCard from './components/careerCards';
-import ToolsIcons from './components/toolsIcons';
+import ToolsIcons from './components/toolsSection/toolsFormat';
 import Footer from './components/footer';
 function App() {
   return (
     <div>
       <body>
-        <div className="containerWorking">
+        {/* <div className="containerWorking">
           <div className="image-containerWorking">
             <img className="pfp" src={working}/>
           </div>
@@ -17,18 +17,18 @@ function App() {
           <a href="https://github.com/Matii111" rel="noreferrer">
             <img className="git" src={git} />
           </a>
-        </div>
-        {/* <div>
+        </div> */}
+        <div>
           <div className='language-changer'>
             <h1>current language</h1>
           </div>
           <div className='presentation-label'>
             <h1>Matias</h1>
           </div>
+          <p className='section-title'>
+            Proyecto destacado
+          </p>
           <div className='content-container'>
-            <h1 className='section-title'>
-              Proyecto destacado
-            </h1>
             <ProjectCard />
             <div className='career-container'>
               <h1 className='career-title'>
@@ -53,7 +53,7 @@ function App() {
             </div>
           </div>
           <Footer />
-        </div> */}
+        </div>
       </body>
     </div>
   );

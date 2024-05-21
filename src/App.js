@@ -9,7 +9,7 @@ function App() {
   return (
     <div>
       <body>
-        {/* <div className="containerWorking">
+        <div className="containerWorking">
           <div className="image-containerWorking">
             <img className="pfp" src={working}/>
           </div>
@@ -17,8 +17,8 @@ function App() {
           <a href="https://github.com/Matii111" rel="noreferrer">
             <img className="git" src={git} />
           </a>
-        </div> */}
-        <div>
+        </div>
+        {/* <div>
           <div className='language-changer'>
             <h1>current language</h1>
           </div>
@@ -53,7 +53,7 @@ function App() {
             </div>
           </div>
           <Footer />
-        </div>
+        </div> */}
       </body>
     </div>
   );

@@ -5,7 +5,7 @@ import Next from '../../imgs/logos/next-slider-icon.svg';
 import Prev from '../../imgs/logos/prev-slider-icon.svg';
 import Close from '../../imgs/logos/close-icon.svg';
 
-function ProjectCard() {
+function ProjectFormat() {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [isProjectOpen, setProjectOpen] = useState(false);
     const [selectedId, setSelectedId] = useState(null);
@@ -116,4 +116,4 @@ function ProjectCard() {
     );
 }
 
-export default ProjectCard;
+export default ProjectFormat;

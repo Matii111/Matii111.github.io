@@ -1,12 +1,12 @@
 import './index.css';
 import working from './imgs/working.jpg';
 import git from './imgs/git.png';
-import ProjectCard from './components/featuredProjects/projectCardsFormat';
-import CareerCard from './components/careerCards';
 import ToolsIcons from './components/toolsSection/toolsFormat';
 import Footer from './components/footer';
 import PresentationLabel from './components/presentationLabel';
 import LanguageChanger from './components/languageChanger';
+import CareerFormat from './components/careerSection/careerFormat';
+import ProjectFormat from './components/featuredProjects/projectCardsFormat';
 function App() {
   return (
     <div>
@@ -24,21 +24,9 @@ function App() {
           <LanguageChanger />
           <PresentationLabel />
           <div className='content-container'>
-            <ProjectCard />
+            <ProjectFormat />
             <div className='career-container'>
-              <p className='career-title'>
-                Trayectoria
-              </p>
-              <hr className='career-title-hr' />
-              <p className='career-subtitle'>
-                Formacion
-              </p>
-              <hr className='career-subtitle-hr' />
-              <div className='career-content-container'>
-                <h3 className='career-content-title'>Formacion 1</h3>
-                <CareerCard />
-              </div>
-              <hr className='divisor-bar'></hr>
+                <CareerFormat />            
             </div>
             <div className='tools-container'>
               <ToolsIcons />

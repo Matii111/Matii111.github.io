@@ -56,8 +56,9 @@ function ProjectCard() {
                 <hr className='right-hr' />
             </div>
             <div className="slide-container">
-                {isProjectOpen && (
-                    <div className='overlay'>
+                
+                    <div className={`${isProjectOpen ? 'overlay' : 'overlay-inactive'}`}>
+                    {isProjectOpen && (
                         <div className='project-preview-container'>
                             <div className='project-preview'>
                                 <div className='project-preview-left'>
@@ -85,8 +86,9 @@ function ProjectCard() {
                                 <img src={Close} alt="Close" />
                             </p>
                         </div>
+                          )}
                     </div>
-                )}
+              
                 <Slide {...slideSettings}>
                     {ProjectCardsData.map((project, index) => {
                         const nextSlide = (currentSlide + 1) % ProjectCardsData.length;

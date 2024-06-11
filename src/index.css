@@ -14,6 +14,17 @@ h1 {
   width: 4px;
 }
 
+/* ANIMATIONS  */
+@keyframes breathe {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
 /* 
 colorPalette 
 1E1E1E
@@ -364,7 +375,8 @@ body {
 }
 
 /* SLIDER FEATURED PROJECTS */
-.overlay {
+
+.slide-container>.overlay {
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   width: 100%;
@@ -373,7 +385,21 @@ body {
   left: 0;
   opacity: 1;
   z-index: 99;
-  transition: all 1s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Estilo para overlay inactivo */
+.slide-container>.overlay-inactive {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 99;
+  transition: all 0.2s ease-in-out;
+  pointer-events: none;
 }
 
 .project-preview-container {
@@ -400,8 +426,8 @@ body {
   display: flex;
   flex-direction: column;
   align-content: flex-start;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: flex-end;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -503,8 +529,8 @@ body {
   box-shadow: 0rem 0rem 0.5rem #1E1E1E;
   color: #CFCFEA;
   height: 15rem;
-  width: 32rem;
-  left: -50%;
+  width: 36rem;
+  left: -59%;
   z-index: 0;
   opacity: 0.2;
   flex-wrap: nowrap;
@@ -513,6 +539,15 @@ body {
   transition: all 0.5s ease;
   margin-top: 2.5rem;
   font-size: 0.8rem;
+  pointer-events: none;
+}
+
+.project-card>.project-info>.project-description {
+  opacity: 0;
+}
+
+.middle-card>.project-info>.project-description {
+  opacity: 1;
 }
 
 .middle-card {
@@ -522,6 +557,7 @@ body {
   opacity: 1;
   margin-top: 0rem;
   font-size: 2rem;
+  pointer-events: all;
 }
 
 .middle-card .project-img-container img {
@@ -577,18 +613,20 @@ body {
   opacity: 1;
   background-color: transparent;
   border: transparent;
+  top: 10rem;
+  animation: breathe 3s infinite alternate;
 }
 
 .slideButtonNext>img,
 .slideButtonPrev>img {
   height: 5rem;
-  bottom: -2.5rem;
+  transition: all 0.2s ease;
 }
 
 .slideButtonNext>img:active,
 .slideButtonPrev>img:active {
-  transform: translateY(0.1rem);
   box-shadow: 0rem 0.1rem 0.2rem -0.2rem #1E1E1E;
+  transform: translateY(0.1rem);
 }
 
 .slideButtonPrev>img {
@@ -599,4 +637,17 @@ body {
 .slideButtonNext>img {
   left: 5rem;
   position: absolute;
+}
+
+.slideButtonNext>img:hover {
+  translate: calc(0.5rem);
+}
+
+.slideButtonPrev>img:hover {
+  translate: calc(-0.5rem);
+}
+
+.slideButtonPrev:hover,
+.slideButtonNext:hover {
+  animation: none;
 }

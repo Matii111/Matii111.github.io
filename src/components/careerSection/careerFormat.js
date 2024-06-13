@@ -1,22 +1,23 @@
 import React, { useState } from 'react';
-import CareerCard from '../careerCards';
+import CareerCard from './careerCards'
 
 function CareerFormat() {
     return (
         <>
             <div className="section">
                 <div className='career-title'>
-                    <div className='circle-title'></div>
+                    <div className='circle-title' />
                     <hr className='left-hr' />
                     <p>Trayectoria</p>
                     <hr className='right-hr' />
                 </div>
                 <div className='career-subtitle'>
-                    <div className='circle-title'></div>
+                    <div className='circle-title' />
                     <hr className='left-hr' />
                     <p>Formacion</p>
                     <hr className='right-hr' />
                 </div>
+                <CareerCard />
                 <div className='centered'>
                     <hr className='career-end' />
                 </div>

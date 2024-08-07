@@ -962,6 +962,10 @@ body {
     width: 35rem;
   }
 
+  .career-long-hr {
+    width: 50rem;
+  }
+
   /* SPECIALITIES CONTENT */
 
   .tools-title {
@@ -979,5 +983,25 @@ body {
 
   .tool-item>img {
     height: 5rem;
+  }
+
+  .career-featured-content {
+    margin-right: 7rem;
+  }
+
+  .career-content-title {
+    left: -11rem;
+  }
+
+  .horizontal-hr>p {
+    font-size: 1.2rem;
+  }
+
+  .career-content>.career-content-description {
+    width: 90%;
+  }
+
+  .career-featured-container {
+    margin-left: 5rem;
   }
 }

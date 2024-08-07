@@ -6,7 +6,6 @@ function PresentationLabel() {
             <div className='presentation-label'>
                 <p className='presentation'>Hola, soy &lt;Matias&gt;</p>
                 <p className='description'>Programador Junior</p>
-
             </div>
             <div className='presentation-logo'>
                 <img src={Code} alt='code' />

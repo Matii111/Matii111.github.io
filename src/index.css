@@ -1131,6 +1131,14 @@ body {
     font-size: 1.1rem;
   }
 
+  .project-preview-right>img {
+    width: 14rem;
+  }
+
+  .project-preview-right {
+    margin-left: 2rem;
+  }
+
   /* FEATURED PROJECT */
 
   .slideButtonPrev>img {
@@ -1165,6 +1173,23 @@ body {
 
   .right-hr {
     width: 13rem;
+  }
+
+  .project-preview-container {
+    height: 36%;
+  }
+
+  .project-preview-container {
+    top: 25%;
+    left: 14%;
+  }
+
+  .middle-card .project-img-container img {
+    max-width: 17rem;
+  }
+
+  .overlay-close-button>img {
+    margin-bottom: 21rem;
   }
 
   /* PRESENTATION CARD */

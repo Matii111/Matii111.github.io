@@ -1067,3 +1067,136 @@ body {
     margin-left: 5rem;
   }
 }
+
+@media (max-width: 768px) {
+
+  /* CAREER SECTION */
+  .career-title>.right-hr {
+    width: 21rem;
+  }
+
+  .career-long-hr {
+    width: 38rem;
+  }
+
+  .career-content-title {
+    left: -4rem;
+  }
+
+  .career-featured-container {
+    margin-left: 5rem;
+  }
+
+  .career-featured-content {
+    margin-left: 0rem !important;
+    margin-top: -0.8rem;
+  }
+
+  .horizontal-hr>p {
+    font-size: 1rem !important;
+    margin-left: 1rem;
+    margin-top: -2.5rem;
+    height: 1rem;
+  }
+
+  .career-featured-content>.horizontal-hr {
+    width: 0.4rem;
+    margin-top: -2.4rem;
+    margin-left: 2.9rem;
+  }
+
+  .career-featured-content>.diagonal-hr {
+    width: 1rem;
+    rotate: calc(135deg);
+    margin-left: 2rem;
+    margin-bottom: 0;
+  }
+
+  .career-featured-content>.circle-title {
+    margin-top: 0.2rem;
+    margin-left: 1.2rem;
+  }
+
+  .career-featured-content>p {
+    margin-top: 2rem;
+    margin-left: 0rem;
+  }
+
+  .career-end {
+    width: 80%;
+  }
+
+  .career-content>.career-content-description {
+    width: 80%;
+    font-size: 1.1rem;
+  }
+
+  /* FEATURED PROJECT */
+
+  .slideButtonPrev>img {
+    right: -4.4rem;
+  }
+
+  .slideButtonNext>img {
+    left: -7rem;
+  }
+
+  .slideButtonNext>img,
+  .slideButtonPrev>img {
+    height: 5rem;
+    margin-top: -5rem;
+    opacity: 0;
+    padding: 4rem 0rem 4rem 0rem;
+  }
+
+  .middle-card {
+    width: 25rem;
+    height: 16rem !important;
+  }
+
+  .project-card {
+    height: 12rem;
+  }
+
+  .slide-container {
+    width: 45rem;
+
+  }
+
+  .right-hr {
+    width: 13rem;
+  }
+
+  /* PRESENTATION CARD */
+
+  .presentation-logo>img {
+    width: 23rem;
+    margin-left: 0;
+  }
+
+  .presentation {
+    font-size: 3rem;
+  }
+
+  .description {
+    font-size: 1.3rem;
+  }
+
+  .presentation-label {
+    padding-left: 7rem;
+  }
+
+  /* FOOTER */
+  .footer-title>p {
+    font-size: 1.2rem;
+  }
+
+  /* SPECIALITIES */
+  .tools-title .right-hr {
+    width: 46%;
+  }
+
+  .tool-item>img {
+    height: 4rem;
+  }
+}

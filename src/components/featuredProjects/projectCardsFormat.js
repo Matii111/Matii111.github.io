@@ -46,7 +46,7 @@ function ProjectFormat() {
     };
 
     return (
-        <div>
+        <div className='featured-container'>
             <div className='featured-title'>
                 <div className='circle-title' ></div>
                 <hr className='left-hr' />

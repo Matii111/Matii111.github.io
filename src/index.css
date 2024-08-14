@@ -730,10 +730,9 @@ body {
 .slide-container {
   width: 60rem;
   margin: auto;
-
   padding: 0.2rem;
   border-radius: 0.5rem;
-  height: 28rem;
+  height: fit-content;
 }
 
 .project-card {
@@ -1293,8 +1292,8 @@ body {
   }
 
   .circle-title {
-    width: 0.3rem;
-    height: 0.3rem;
+    width: 0.2rem;
+    height: 0.2rem;
   }
 
   .right-hr {
@@ -1308,7 +1307,6 @@ body {
   .slide-container {
     width: 24rem;
     margin-left: 1rem;
-    height: 20rem;
   }
 
   .project-card {
@@ -1467,5 +1465,105 @@ body {
 
   .tools-container {
     height: 24rem;
+  }
+}
+
+@media (max-width: 375px) {
+
+  /* PRESENTATION SECTION */
+  .presentation {
+    font-size: 1.8rem;
+    width: 16rem;
+  }
+
+  .presentation-container {
+    height: 28rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  /* FEATURED PROJECTS */
+  .slide-container {
+    width: 21rem;
+  }
+
+  .circle-title {
+    min-width: 0.2rem;
+    min-height: 0.2rem;
+  }
+
+  .middle-card {
+    margin-left: -2.8rem;
+    padding: 0.7rem;
+    width: 17rem;
+    top: 0rem !important;
+  }
+
+  .slideButtonPrev>img {
+    display: none;
+  }
+
+  .project-card {
+    height: 13rem;
+    top: -2rem;
+  }
+
+  /* CAREER  SECTION  */
+
+  .career-subtitle {
+    margin-top: -1rem;
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .career-content>.career-content-title {
+    margin-left: 16rem;
+  }
+
+  .career-long-hr {
+    width: 15rem;
+  }
+
+  .career-featured-content {
+    margin-left: -6rem !important;
+  }
+
+  .career-featured-container {
+    width: 6rem;
+  }
+
+  .career-content>.career-content-description {
+    font-size: 0.7rem;
+  }
+
+  /* TOOL SECTION */
+
+  .tools-title {
+    font-size: 1.5rem;
+  }
+
+  .tool-item {
+    padding-right: 2rem;
+    padding-left: 1rem;
+  }
+
+  /* FOOTER */
+  .footer-title>p {
+    font-size: 0.8rem;
+  }
+
+  .footer-items>p {
+    font-size: 1.2rem;
+  }
+
+  .items-icons>img {
+    width: 1.5rem;
   }
 }

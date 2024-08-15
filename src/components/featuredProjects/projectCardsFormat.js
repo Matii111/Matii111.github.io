@@ -1,14 +1,36 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Slide } from 'react-slideshow-image';
 import ProjectCardsData from './projectCardsData';
 import Next from '../../imgs/logos/next-slider-icon.svg';
 import Prev from '../../imgs/logos/prev-slider-icon.svg';
 import Close from '../../imgs/logos/close-icon.svg';
 
+function centerPopup() {
+    var popup = document.querySelector('.project-preview-container');
+
+    var width = window.innerWidth;
+    var height = window.innerHeight;
+
+    var popupWidth = popup.offsetWidth;
+    var popupHeight = popup.offsetHeight;
+
+    var left = (width - popupWidth) / 2;
+    var top = (height - popupHeight) / 2;
+
+    popup.style.left = `${left}px`;
+    popup.style.top = `${top}px`;
+}
+
 function ProjectFormat() {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [isProjectOpen, setProjectOpen] = useState(false);
     const [selectedId, setSelectedId] = useState(null);
+
+    useEffect(() => {
+        if (isProjectOpen) {
+            centerPopup();
+        }
+    }, [isProjectOpen]);
 
     const handleProjectOpen = (id) => {
         setSelectedId(id);
@@ -56,8 +78,7 @@ function ProjectFormat() {
                 <hr className='right-hr' />
             </div>
             <div className="slide-container">
-                
-                    <div className={`${isProjectOpen ? 'overlay' : 'overlay-inactive'}`}>
+                <div className={`${isProjectOpen ? 'overlay' : 'overlay-inactive'}`}>
                     {isProjectOpen && (
                         <div className='project-preview-container'>
                             <div className='project-preview'>
@@ -78,17 +99,16 @@ function ProjectFormat() {
                                 </div>
                                 <hr className='right-hr' />
                                 <div className='project-preview-right'>
-                                    <img src={project.image} />
-                                    <img src={project.image2} />
+                                    <img src={project.image} alt="Project" />
+                                    <img src={project.image2} alt="Project" />
                                 </div>
                             </div>
                             <p onClick={handleProjectClose} className='overlay-close-button'>
                                 <img src={Close} alt="Close" />
                             </p>
                         </div>
-                          )}
-                    </div>
-              
+                    )}
+                </div>
                 <Slide {...slideSettings}>
                     {ProjectCardsData.map((project, index) => {
                         const nextSlide = (currentSlide + 1) % ProjectCardsData.length;

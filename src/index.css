@@ -229,7 +229,7 @@ body {
 }
 
 .career-subtitle>.right-hr {
-  width: 70%;
+  width: 60%;
   box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
 }
 
@@ -263,7 +263,7 @@ body {
 
 .career-long-hr {
   border: 0.1rem solid #1E1E1E;
-  width: 80rem;
+  width: 63rem;
   margin: 0;
   box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.3);
 }
@@ -381,7 +381,7 @@ body {
 }
 
 .career-content-title {
-  left: -26rem;
+  left: -18rem;
   position: relative;
   cursor: default;
 }
@@ -397,6 +397,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 
 .tools-content {
@@ -492,7 +493,7 @@ body {
 
 .footer-title>p {
   color: #CFCFEA;
-  font-size: 2rem;
+  font-size: 1.5rem;
   cursor: default;
   text-shadow: 0.1rem 0.3rem rgba(255, 255, 255, 0.1);
 }
@@ -573,8 +574,8 @@ body {
 }
 
 .circle-title {
-  width: 1rem;
-  height: 1rem;
+  min-width: 0.7rem;
+  min-height: 0.7rem;
   border-radius: 50%;
   border-style: solid;
   border-color: #1E1E1E;
@@ -583,7 +584,7 @@ body {
 }
 
 .right-hr {
-  width: 56%;
+  width: 55%;
   margin-left: 1rem;
   border: 0.1rem solid #1E1E1E;
   margin-right: 0rem;
@@ -732,7 +733,7 @@ body {
   margin: auto;
   padding: 0.2rem;
   border-radius: 0.5rem;
-  height: fit-content;
+  height: 25rem;
 }
 
 .project-card {
@@ -788,6 +789,7 @@ body {
   margin-bottom: 0.5rem;
   color: #A89B9D;
   transition: all 0.5s ease;
+  height: 2rem;
 }
 
 .project-title {
@@ -800,6 +802,7 @@ body {
 .project-card>hr {
   width: 100%;
   border: 1px solid #CFCFEA;
+  margin-top: 3rem;
 }
 
 .project-info {
@@ -846,12 +849,12 @@ body {
 }
 
 .slideButtonPrev>img {
-  right: 5rem;
+  right: 2rem;
   position: absolute;
 }
 
 .slideButtonNext>img {
-  left: 5rem;
+  left: 2rem;
   position: absolute;
 }
 
@@ -872,12 +875,16 @@ body {
 /* 4k RES */
 @media (min-width: 2560px) {
   .career-title>.right-hr {
-    width: 70%;
+    width: 67%;
   }
 
   .project-preview-container {
     top: 20%;
     left: 34.5%;
+  }
+
+  .project-card>hr {
+    margin-top: 2rem;
   }
 }
 
@@ -886,7 +893,7 @@ body {
 
   /* FEATURED CONTENT */
   .right-hr {
-    width: 37rem;
+    width: 50%;
   }
 
   .project-preview-container {
@@ -910,6 +917,10 @@ body {
     margin-left: 2rem;
   }
 
+  .project-card>hr {
+    margin-top: 2rem;
+  }
+
   /* CAREER CONTENT */
 
   .career-content-title {
@@ -921,7 +932,8 @@ body {
   }
 
   .career-title>.right-hr {
-    width: 59rem;
+    width: 65%;
+
   }
 
   .career-content>.career-content-description {
@@ -940,7 +952,7 @@ body {
 
 
 /* LAPTOP RES */
-@media (max-width: 1024px) {
+@media (max-width: 1193px) {
 
   /* PRESENTATION */
   .presentation-label {
@@ -958,7 +970,7 @@ body {
   }
 
   .right-hr {
-    width: 20rem;
+    width: 35%;
   }
 
   /* FOOTER */
@@ -970,19 +982,22 @@ body {
 
   /* SLIDER */
 
+  .project-card>hr {
+    margin-top: 1rem;
+  }
+
   .slide-container {
     width: 36rem;
   }
 
   .project-card {
-    width: 18rem;
-    height: 5rem;
+    width: 23rem;
+    height: 12rem;
     font-size: 1rem;
   }
 
   .middle-card .project-title {
     width: 15rem;
-    height: 10rem;
     font-size: 2rem;
   }
 
@@ -991,7 +1006,7 @@ body {
   }
 
   .middle-card .project-img-container img {
-    max-width: 10rem;
+    max-width: 13rem;
   }
 
   .project-img-container img {
@@ -1000,7 +1015,7 @@ body {
 
   .middle-card {
     width: 20rem;
-    height: 10rem;
+    height: 16rem !important;
     margin-left: 0rem;
   }
 
@@ -1043,13 +1058,13 @@ body {
   }
 
   .overlay-close-button>img {
-    margin-bottom: 19rem;
+    margin-bottom: 27rem;
   }
 
   /* CAREER CONTENT */
 
   .career-title>.right-hr {
-    width: 35rem;
+    width: 55%;
   }
 
   .career-long-hr {
@@ -1112,15 +1127,11 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 982px) {
 
   /* CAREER SECTION */
   .career-content>p {
     font-size: 1.4rem;
-  }
-
-  .career-title>.right-hr {
-    width: 21rem;
   }
 
   .career-long-hr {
@@ -1187,6 +1198,10 @@ body {
     margin-left: 2rem;
   }
 
+  .project-card>hr {
+    margin-top: 1rem;
+  }
+
   /* FEATURED PROJECT */
 
   .slideButtonPrev>img {
@@ -1219,10 +1234,6 @@ body {
     width: 34.5rem;
   }
 
-  .right-hr {
-    width: 13rem;
-  }
-
   .project-preview-container {
     top: 22%;
     left: 14.6%;
@@ -1230,7 +1241,7 @@ body {
   }
 
   .middle-card .project-img-container img {
-    max-width: 17rem;
+    max-width: 100%;
   }
 
   .overlay-close-button>img {
@@ -1271,7 +1282,7 @@ body {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 751px) {
 
   /* PRESENTATION LABEL */
 
@@ -1291,40 +1302,30 @@ body {
     font-size: 1.5rem;
   }
 
-  .circle-title {
-    width: 0.2rem;
-    height: 0.2rem;
-  }
-
-  .right-hr {
-    width: 4rem;
-  }
-
   .left-hr {
     width: 1rem;
   }
 
   .slide-container {
-    width: 24rem;
-    margin-left: 1rem;
+    width: 75%;
   }
 
   .project-card {
     padding: 1.7rem;
     width: 15rem;
-    height: 12rem;
+    height: 15rem;
   }
 
   .middle-card {
     padding: 1.7rem;
-    width: 18rem;
-    margin-left: -2rem;
-    height: 12rem;
+    width: 210%;
+    margin-left: -1.4rem;
+    height: 19rem !important;
   }
 
   .project-preview-container {
     top: 9%;
-    left: 3%;
+    left: 2%;
     width: 25rem;
     height: 40rem;
   }
@@ -1367,12 +1368,8 @@ body {
     margin-left: 1rem;
   }
 
-  .career-title>.right-hr {
-    width: 12rem;
-  }
-
   .career-long-hr {
-    width: 20rem;
+    width: 17rem;
   }
 
   .career-featured-content {
@@ -1380,12 +1377,12 @@ body {
   }
 
   .career-featured-container {
-    width: 19rem;
+    width: 18rem;
   }
 
   .career-featured-content>p {
     font-size: 0.8rem;
-    rotate: calc(311deg);
+    rotate: calc(270deg);
     margin-top: 2rem;
     margin-left: 0rem;
   }
@@ -1398,9 +1395,9 @@ body {
   .career-start-line>p,
   .career-end-line>p {
     font-size: 0.8rem;
-    rotate: calc(311deg);
-    margin-top: 1rem;
-    margin-left: -2rem;
+    rotate: calc(270deg);
+    margin-top: 1.5rem;
+    margin-left: 0rem;
   }
 
   .horizontal-hr>p {
@@ -1416,7 +1413,7 @@ body {
   }
 
   .career-subtitle>.right-hr {
-    width: 44%;
+    width: 55%;
   }
 
   .career-content>.career-content-description {
@@ -1425,7 +1422,7 @@ body {
   }
 
   .career-content>.career-content-title {
-    margin-left: 11rem;
+    margin-left: 9rem;
     font-size: 1.1rem;
     text-wrap: nowrap;
   }
@@ -1437,13 +1434,8 @@ body {
 
   /* FOOTER */
 
-  .footer-title .left-hr,
-  .footer-title .right-hr {
-    width: 2rem;
-  }
-
   .footer-title>p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   /* TOOLS */
@@ -1451,10 +1443,7 @@ body {
     width: 90%;
     padding-left: 1rem;
     padding-bottom: 3rem;
-  }
-
-  .tools-title .right-hr {
-    width: 18%;
+    font-size: 1.8rem;
   }
 
   .tool-item>img {
@@ -1466,9 +1455,19 @@ body {
   .tools-container {
     height: 24rem;
   }
+
+  .circle-title {
+    width: 0.7rem;
+    height: 0.7rem;
+  }
+
+  .footer-title .left-hr,
+  .footer-title .right-hr {
+    width: 2rem;
+  }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 421px) {
 
   /* PRESENTATION SECTION */
   .presentation {
@@ -1495,24 +1494,29 @@ body {
   }
 
   .circle-title {
-    min-width: 0.2rem;
-    min-height: 0.2rem;
+    width: 0.7rem;
+    height: 0.7rem;
   }
 
   .middle-card {
-    margin-left: -2.8rem;
+    margin-left: -1.6rem;
     padding: 0.7rem;
     width: 17rem;
+    height: 18rem !important;
     top: 0rem !important;
   }
 
-  .slideButtonPrev>img {
-    display: none;
-  }
 
   .project-card {
-    height: 13rem;
+    height: 15rem;
     top: -2rem;
+  }
+
+  .project-preview-container {
+    width: 22rem;
+    height: 40rem;
+    top: 9%;
+    left: 3%;
   }
 
   /* CAREER  SECTION  */
@@ -1566,4 +1570,282 @@ body {
   .items-icons>img {
     width: 1.5rem;
   }
+
+  .footer-title .left-hr,
+  .footer-title .right-hr {
+    width: 1rem;
+  }
+}
+
+@media (max-width: 342px) {
+
+  /* PRESENTATION */
+  .presentation-logo>img {
+    width: 10rem;
+  }
+
+  /* FEATURED CONTENT */
+
+  .featured-title>p {
+    font-size: 1.2rem;
+  }
+
+  .featured-title>.left-hr {
+    width: 1rem;
+    margin-right: 0.3rem;
+  }
+
+  .featured-title>.right-hr {
+    margin-left: 0.3rem;
+  }
+
+  .middle-card .project-img-container img {
+    max-width: 15rem;
+  }
+
+  .slide-container {
+    width: 18rem;
+  }
+
+  .middle-card .project-title {
+    font-size: 1.8rem;
+  }
+
+  .middle-card {
+    margin-left: -2.4rem;
+    width: 15rem;
+  }
+
+  .project-preview-container {
+    width: 17rem;
+    height: 40rem;
+    top: 9%;
+    left: 8%;
+  }
+
+  /* CAREER SECTION */
+
+  .career-featured-container {
+    width: 7rem;
+  }
+
+  .career-title {
+    padding: 0rem;
+    font-size: 1.2rem;
+  }
+
+  .career-subtitle>.circle-title {
+    border: 0rem;
+  }
+
+  /* TOOLS SECTION */
+
+
+  .tools-title .circle-title {
+    min-width: 0.7rem;
+    min-height: 0.7rem;
+  }
+
+  .tool-item {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .tools-title {
+    font-size: 1.2rem;
+  }
+
+  .tools-title .left-hr {
+    width: 0.8rem;
+    margin-right: 0.8rem;
+  }
+
+  .tool-item>img {
+    height: 2.3rem;
+  }
+
+  .items-icons>img {
+    width: 1.7rem;
+  }
+
+  /* FOOTER */
+
+  .footer-title>p {
+    font-size: 0.5rem;
+  }
+
+  .footer-items>p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 310px) {
+
+  /* PRESENTATION */
+  .presentation {
+    font-size: 1rem;
+    width: 16rem;
+  }
+
+  .presentation-container {
+    flex-direction: column-reverse;
+  }
+
+  .presentation-logo>img {
+    margin-left: 0rem;
+  }
+
+  /* CAREER SECTION */
+  .centered {
+    min-width: 15rem;
+    margin-left: -0.5rem;
+  }
+
+  .career-title {
+    padding: 0rem;
+    font-size: 100%;
+    width: 100%;
+    min-width: 15rem;
+    margin-left: -1rem;
+  }
+
+  .career-subtitle {
+    min-width: 15rem;
+    margin-left: -1rem;
+  }
+
+  .career-long-hr {
+    width: 13rem;
+  }
+
+  .career-line {
+    flex-wrap: nowrap;
+  }
+
+  .career-content>.career-content-title {
+    font-size: 90%;
+    width: 15rem;
+    text-wrap: pretty;
+    overflow: hidden;
+  }
+
+  .career-title>.right-hr {
+    width: 30%;
+    overflow: hidden;
+  }
+
+  .career-subtitle>.right-hr {
+    width: 29%;
+    overflow: hidden;
+  }
+
+  .career-container {
+    overflow: hidden;
+  }
+
+  /* FEATURED CONTENT */
+  .slide-container {
+    width: 95%;
+    min-width: 10rem;
+  }
+
+  .middle-card .project-title {
+    font-size: 160%;
+  }
+
+  .project-card>hr {
+    width: 98%;
+  }
+
+  .middle-card {
+    width: 250%;
+    height: 85% !important;
+    margin-left: -40%;
+    min-width: 10rem;
+  }
+
+  .middle-card .project-img-container img {
+    max-width: 100%;
+  }
+
+  .featured-title>.left-hr {
+    width: 1%;
+  }
+
+  .featured-title>p {
+    font-size: 100%;
+    width: 13rem;
+  }
+
+  .right-hr {
+    width: 10%;
+    min-width: 0.5rem;
+    overflow: hidden;
+  }
+
+  .left-hr {
+    width: 1%;
+  }
+
+  .horizontal-hr>p {
+    display: none;
+  }
+
+  .featured-title {
+    min-width: 13rem;
+  }
+
+  /* CAREER CONTENT */
+
+
+  .career-content {
+    min-width: 15rem;
+    margin-left: -0.7rem;
+  }
+
+  .career-featured-content>.diagonal-hr {
+    display: none;
+  }
+
+  .career-line {
+    margin-left: 7%;
+    rotate: 90deg;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+  }
+
+  .career-content>.career-content-title {
+    font-size: 90%;
+    width: 90%;
+    text-wrap: wrap;
+  }
+
+  .career-featured-content>.circle-title {
+    margin-top: 0.3em;
+    margin-left: 1.2rem;
+  }
+
+  /* TOOLS SECTION */
+  .tools-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tools-container {
+    height: fit-content;
+  }
+
+  body>div {
+    min-width: 15rem
+  }
+
+  /* FOOTER */
+  .footer-title .left-hr,
+  .footer-title .right-hr {
+    width: 0.1rem;
+  }
+
 }

@@ -4,6 +4,7 @@ import ProjectCardsData from './projectCardsData';
 import Next from '../../imgs/logos/next-slider-icon.svg';
 import Prev from '../../imgs/logos/prev-slider-icon.svg';
 import Close from '../../imgs/logos/close-icon.svg';
+import { Fade } from 'react-awesome-reveal';
 
 function centerPopup() {
     var popup = document.querySelector('.project-preview-container');
@@ -69,14 +70,21 @@ function ProjectFormat() {
 
     return (
         <div className='featured-container'>
-            <div className='featured-title'>
-                <div className='circle-title' ></div>
-                <hr className='left-hr' />
-                <p>
-                    Proyectos destacados
-                </p>
-                <hr className='right-hr' />
-            </div>
+            <Fade
+                direction='down'
+                className='fade-effect'
+                triggerOnce='true'
+                fraction='1'
+            >
+                <div className='featured-title'>
+                    <div className='circle-title' ></div>
+                    <hr className='left-hr' />
+                    <p>
+                        Proyectos destacados
+                    </p>
+                    <hr className='right-hr' />
+                </div>
+            </Fade>
             <div className="slide-container">
                 <div className={`${isProjectOpen ? 'overlay' : 'overlay-inactive'}`}>
                     {isProjectOpen && (

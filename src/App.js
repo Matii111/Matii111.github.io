@@ -7,6 +7,9 @@ import PresentationLabel from './components/presentationLabel';
 import LanguageChanger from './components/languageChanger';
 import CareerFormat from './components/careerSection/careerFormat';
 import ProjectFormat from './components/featuredProjects/projectCardsFormat';
+
+import { Fade } from "react-awesome-reveal";
+
 function App() {
   return (
     <div>
@@ -22,20 +25,34 @@ function App() {
         </div> */}
         <div>
           <LanguageChanger />
-          <PresentationLabel />
+          <Fade
+            direction='down'
+            className='fade-effect'
+            triggerOnce='true'
+            fraction='1'
+          >
+            <PresentationLabel />
+          </Fade>
           <div className='content-container'>
             <ProjectFormat />
             <div className='career-container'>
-                <CareerFormat />            
+              <CareerFormat />
             </div>
             <div className='tools-container'>
               <ToolsIcons />
             </div>
           </div>
-          <Footer />
+          <Fade
+            direction='up'
+            className='fade-effect'
+            triggerOnce='true'
+            fraction='0.5'
+          >
+            <Footer />
+          </Fade>
         </div>
-      </body>
-    </div>
+      </body >
+    </div >
   );
 }
 
@@ -45,9 +62,9 @@ export default App;
 
 // #TODO: CORREGIR ERRORES ENTRE RESOLUCIONES PREESTABLECIDAS.
 
-// #TODO: CREAR FUNCION PARA SALIR DE POPUP AUNQUE NO SE CLICKEE 
-//        EN LA 'X' AL CLICKEAR UNA IMAGEN EN SECCION DE 
+// #TODO: CREAR FUNCION PARA SALIR DE POPUP AUNQUE NO SE CLICKEE
+//        EN LA 'X' AL CLICKEAR UNA IMAGEN EN SECCION DE
 //        PROYECTOS DESTACADOS.
 
-// #TODO" AGREGAR EFECTOS DE TRANSICION ENTRE CADA SECCION 
+// #TODO" AGREGAR EFECTOS DE TRANSICION ENTRE CADA SECCION
 //        (UTILIZAR PAQUETE NPM)

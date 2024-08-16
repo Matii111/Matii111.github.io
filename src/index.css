@@ -25,6 +25,10 @@ h1 {
   }
 }
 
+.fade-effect {
+  width: -webkit-fill-available;
+}
+
 /* 
 colorPalette 
 1E1E1E
@@ -391,13 +395,17 @@ body {
 .tools-container {
   width: 100%;
   background-color: #1E1E1E;
-  margin: 1rem;
   margin-bottom: 10%;
   height: 30rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+}
+
+.tools-container>div {
+  display: flex;
+  justify-content: center;
 }
 
 .tools-content {
@@ -433,7 +441,6 @@ body {
   padding-bottom: 5rem;
   color: #CFCFEA;
   font-size: 2rem;
-  display: flex;
   flex-direction: row;
   align-items: center;
   cursor: default;

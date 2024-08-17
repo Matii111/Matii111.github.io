@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Code from '../imgs/logos/code-icon.svg';
+import { ReactComponent as Code } from '../imgs/logos/code-icon.svg';
 function PresentationLabel() {
     return (
         <div className='presentation-container'>
@@ -8,7 +8,7 @@ function PresentationLabel() {
                 <p className='description'>Programador Junior</p>
             </div>
             <div className='presentation-logo'>
-                <img src={Code} alt='code' />
+                <Code className='code-logo'/>
             </div>
         </div>
     );

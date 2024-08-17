@@ -1,7 +1,8 @@
-import MongoLogo from '../../imgs/logos/mongo-icon.svg';
-import JavaScriptLogo from '../../imgs/logos/js-icon.svg';
-import ReactLogo from '../../imgs/logos/react-icon.svg';
-import Express from '../../imgs/logos/express-icon.svg';
+import { ReactComponent as MongoLogo } from '../../imgs/logos/mongo-icon.svg';
+import { ReactComponent as JavaScriptLogo } from '../../imgs/logos/js-icon.svg';
+import { ReactComponent as ReactLogo } from '../../imgs/logos/react-icon.svg';
+import { ReactComponent as Express } from '../../imgs/logos/express-icon.svg';
+
 
 const ToolsIcons = [
     {

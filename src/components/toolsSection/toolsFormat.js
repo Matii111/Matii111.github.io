@@ -13,17 +13,9 @@ function ToolsIconsFormat() {
             </div>
             <div className='tools-content'>
                 {ToolsIcons.map((tools, index) => (
-                    <Fade
-                        direction='down'
-                        className='fade-effect'
-                        triggerOnce='true'
-                        fraction='1'
-                    >
-                        <div className='tool-item' key={index}>
-                            <img src={tools.image} alt={tools.titulo} />
-
-                        </div>
-                    </Fade>
+                    <div className='tool-item' key={index}>
+                        <tools.image className='tool-logo' alt={tools.titulo} />
+                    </div>
                 ))}
             </div>
         </>

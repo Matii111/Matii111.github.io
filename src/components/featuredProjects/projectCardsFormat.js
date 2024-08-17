@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Slide } from 'react-slideshow-image';
 import ProjectCardsData from './projectCardsData';
-import Next from '../../imgs/logos/next-slider-icon.svg';
-import Prev from '../../imgs/logos/prev-slider-icon.svg';
-import Close from '../../imgs/logos/close-icon.svg';
+import { ReactComponent as Close } from '../../imgs/logos/close-icon.svg';
 import { Fade } from 'react-awesome-reveal';
+import { ReactComponent as Next } from '../../imgs/logos/next-slider-icon.svg';
+import { ReactComponent as Prev } from '../../imgs/logos/prev-slider-icon.svg';
 
 function centerPopup() {
     var popup = document.querySelector('.project-preview-container');
@@ -22,10 +22,27 @@ function centerPopup() {
     popup.style.top = `${top}px`;
 }
 
+function handleCloseOverlay() {
+    const overlays = [...document.getElementsByClassName('overlay')];
+    window.addEventListener('click', ({ target }) => {
+        const overlay = target.closest('.overlay');
+        const clickedOnClosedOverlay = overlay && !overlay.classList.contains('inactive');
+
+        overlays.forEach(p => p.classList.remove('inactive'));
+
+        if (clickedOnClosedOverlay) {
+            overlay.classList.add('inactive');
+            document.body.style.overflow = 'auto';
+        }
+    });
+}
+
 function ProjectFormat() {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [isProjectOpen, setProjectOpen] = useState(false);
     const [selectedId, setSelectedId] = useState(null);
+
+    handleCloseOverlay()
 
     useEffect(() => {
         if (isProjectOpen) {
@@ -47,6 +64,7 @@ function ProjectFormat() {
     const handleStartChange = (from, to) => {
         setCurrentSlide(to);
     };
+
     const project = ProjectCardsData.find(project => project.id === selectedId);
 
     const slideSettings = {
@@ -57,12 +75,12 @@ function ProjectFormat() {
         transitionDuration: 500,
         prevArrow: (
             <button className='slideButtonPrev'>
-                <img src={Prev} alt="Prev" />
+                <Prev className='prev-btn' />
             </button>
         ),
         nextArrow: (
             <button className='slideButtonNext'>
-                <img src={Next} alt="Next" />
+                <Next className='next-btn' />
             </button>
         ),
         onStartChange: handleStartChange
@@ -112,7 +130,7 @@ function ProjectFormat() {
                                 </div>
                             </div>
                             <p onClick={handleProjectClose} className='overlay-close-button'>
-                                <img src={Close} alt="Close" />
+                                <Close alt="Close" />
                             </p>
                         </div>
                     )}

@@ -7,6 +7,7 @@ import PresentationLabel from './components/presentationLabel';
 import LanguageChanger from './components/languageChanger';
 import CareerFormat from './components/careerSection/careerFormat';
 import ProjectFormat from './components/featuredProjects/projectCardsFormat';
+import GoTop from './utils/topButton';
 
 import { Fade } from "react-awesome-reveal";
 
@@ -24,7 +25,7 @@ function App() {
           </a>
         </div> */}
         <div>
-          <LanguageChanger />
+          <LanguageChanger />          
           <Fade
             direction='down'
             className='fade-effect'
@@ -33,6 +34,7 @@ function App() {
           >
             <PresentationLabel />
           </Fade>
+          <GoTop />
           <div className='content-container'>
             <ProjectFormat />
             <div className='career-container'>

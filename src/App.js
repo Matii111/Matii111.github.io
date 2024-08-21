@@ -8,7 +8,7 @@ import LanguageChanger from './components/languageChanger';
 import CareerFormat from './components/careerSection/careerFormat';
 import ProjectFormat from './components/featuredProjects/projectCardsFormat';
 import GoTop from './utils/topButton';
-
+import { ReactComponent as GitHubLogo } from '../src/imgs/logos/github-icon.svg';
 import { Fade } from "react-awesome-reveal";
 
 function App() {
@@ -20,9 +20,9 @@ function App() {
             <img className="pfp" src={working} />
           </div>
           <p className="workingPhrase">404 - Work in progress</p>
-          <a href="https://github.com/Matii111" rel="noreferrer">
-            <img className="git" src={git} />
-          </a>
+          <div className="gitLogoContainer">
+            <GitHubLogo className='gitLogoWorking' alt='Redirigir a GitHub' href="https://github.com/Matii111" />
+          </div>
         </div>
         {/* <div>
           <LanguageChanger />          

@@ -76,12 +76,18 @@ CFCFEA
   color: white;
 }
 
-.git {
-  width: 10%;
+.gitLogoContainer {
+  width: fit-content;
   transition: filter 0.3s ease-in-out;
+  cursor: pointer;
 }
 
-.git:hover {
+.gitLogoContainer>svg {
+  width: 2rem;
+  height: 2rem;  
+}
+
+.gitLogoContainer:hover {
   filter: brightness(50%);
 }
 

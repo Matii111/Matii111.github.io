@@ -15,16 +15,16 @@ function App() {
   return (
     <div>
       <body>
-        {/* <div className="containerWorking">
+        <div className="containerWorking">
           <div className="image-containerWorking">
-            <img className="pfp" src={working}/>
+            <img className="pfp" src={working} />
           </div>
           <p className="workingPhrase">404 - Work in progress</p>
           <a href="https://github.com/Matii111" rel="noreferrer">
             <img className="git" src={git} />
           </a>
-        </div> */}
-        <div>
+        </div>
+        {/* <div>
           <LanguageChanger />          
           <Fade
             direction='down'
@@ -52,21 +52,10 @@ function App() {
           >
             <Footer />
           </Fade>
-        </div>
+        </div> */}
       </body >
     </div >
   );
 }
 
 export default App;
-
-// #TODO: CORREGIR RESOLUCIONES PARA MOVILES DESDE 375 PARA ABAJO. --> Done
-
-// #TODO: CORREGIR ERRORES ENTRE RESOLUCIONES PREESTABLECIDAS. --> Done
-
-// #TODO: CREAR FUNCION PARA SALIR DE POPUP AUNQUE NO SE CLICKEE
-//        EN LA 'X' AL CLICKEAR UNA IMAGEN EN SECCION DE
-//        PROYECTOS DESTACADOS.
-
-// #TODO" AGREGAR EFECTOS DE TRANSICION ENTRE CADA SECCION
-//        (UTILIZAR PAQUETE NPM)

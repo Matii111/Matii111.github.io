@@ -18,7 +18,10 @@ function App() {
   return (
     <div>
       <body>
-        <div className="containerWorking">
+
+        {/* <------------------WIP PAGE PLACEHODER------------------> */}
+
+        {/* <div className="containerWorking">
           <div className="image-containerWorking">
             <img className="pfp" src={pfp} />
           </div>
@@ -26,9 +29,11 @@ function App() {
           <div className="gitLogoContainer">
             <GitHubLogo className='gitLogoWorking' alt='Redirigir a GitHub' href="https://github.com/Matii111" />
           </div>
-        </div>
-        {/* <div>
-          <LanguageChanger />          
+        </div> */}
+
+        {/* <------------------WIP PAGE PLACEHODER------------------> */}
+        <div>
+          <LanguageChanger />
           <Fade
             direction='down'
             className='fade-effect'
@@ -55,7 +60,7 @@ function App() {
           >
             <Footer />
           </Fade>
-        </div> */}
+        </div>
       </body >
     </div >
   );

@@ -1,5 +1,4 @@
 import './index.css';
-import working from './imgs/working.jpg';
 import ToolsIcons from './components/toolsSection/toolsFormat';
 import Footer from './components/footer';
 import PresentationLabel from './components/presentationLabel';

@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import CareerCard from './careerCards';
+import React from 'react';
 import { Fade } from 'react-awesome-reveal';
+import CareerCard from './careerCards';
 
 function CareerFormat() {
     return (

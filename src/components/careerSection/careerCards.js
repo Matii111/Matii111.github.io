@@ -1,5 +1,5 @@
 import CareerData from "./careerData";
-import { Fade } from "react-awesome-reveal";
+
 const TitleFixer = ({ featured_description }) => {
     const featuredTitleLong = featured_description.length > 11;
 

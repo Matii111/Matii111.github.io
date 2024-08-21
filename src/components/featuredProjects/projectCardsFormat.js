@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Slide } from 'react-slideshow-image';
-import ProjectCardsData from './projectCardsData';
-import { ReactComponent as Close } from '../../imgs/logos/close-icon.svg';
+
 import { Fade } from 'react-awesome-reveal';
+import { Slide } from 'react-slideshow-image';
+
+import ProjectCardsData from './projectCardsData';
+
+import { ReactComponent as Close } from '../../imgs/logos/close-icon.svg';
 import { ReactComponent as Next } from '../../imgs/logos/next-slider-icon.svg';
 import { ReactComponent as Prev } from '../../imgs/logos/prev-slider-icon.svg';
 

@@ -1,4 +1,5 @@
 import project from '../../imgs/1280x720.svg';
+
 const ProjectCardsData = [
     {
         id: 1,

@@ -1,5 +1,5 @@
 import ToolsIcons from "./toolsData";
-import { Fade } from "react-awesome-reveal";
+
 function ToolsIconsFormat() {
     return (
         <>

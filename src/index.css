@@ -110,6 +110,7 @@ body {
   background-color: var(--body-color);
   margin: 0;
 }
+
 /*------WIP PLACE HOLDER------*/
 
 /* GO TOP BUTTON */
@@ -227,46 +228,68 @@ body {
   stroke: var(--items-color-2);
 }
 
+/* SUMMARY CONTENT */
 .summary-container {
-  padding: 1rem;
-  width: 40%;
   display: flex;
   flex-direction: column;
   box-shadow: 0rem 1rem 2rem -2rem rgba(0, 0, 0, 0.3);
+  align-items: center;
+  width: 100%;
+}
+
+.summary-title {
+  width: 100%;
+  max-width: 44rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.summary-title>p {
+  font-size: 3rem;
+  color: var(--items-color-1);
+  cursor: default;
+  padding: 1rem;
+  white-space: nowrap;
 }
 
 .sumaries-container {
   display: flex;
+  flex-wrap: wrap;
+  width: 100%;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .sumaries-container>div {
-  width: 50%;
+  width: fit-content;
   cursor: default;
   padding: 1rem;
 }
 
-.summary-title {
+.summary-right>p,
+.summary-left>p {
+  font-size: 1rem;
+  min-width: 5rem;
   text-align: justify;
-  font-size: 3rem;
-  color: var(--items-color-1);
-  cursor: default;
+  max-width: 20rem;
 }
 
-.summary-right>div {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.summary-right>div>a {
+.summary-curriculum>a {
   cursor: pointer;
   color: var(--items-color-1);
   transition: all 0.3s ease-in-out;
   padding-bottom: 1rem;
 }
 
-.summary-right>div>a:hover {
+.summary-container>.summary-curriculum {
+  width: 59%;
+  max-width: 41rem;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 2rem;
+}
+
+.summary-container>div>a:hover {
   color: var(--items-color-2);
   text-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
 }
@@ -1468,6 +1491,8 @@ body {
 
 @media (max-width: 751px) {
 
+
+
   /* PRESENTATION LABEL */
 
   .presentation-label {
@@ -1478,6 +1503,11 @@ body {
     width: 15rem;
     margin-left: -5rem;
     padding-bottom: 3rem;
+  }
+
+  /* SUMMARY SECTION */
+  .summary-container>.summary-curriculum {
+    width: 72%;
   }
 
   /* FEATURED PROJECTS */
@@ -1756,6 +1786,33 @@ body {
   /* PRESENTATION */
   .presentation-logo>.code-logo {
     width: 10rem;
+  }
+
+  /* SUMMARY CONTENT */
+
+  .summary-title>p {
+    font-size: 1.5rem;
+    color: var(--items-color-1);
+    cursor: default;
+    padding: 1rem;
+    white-space: nowrap;
+  }
+
+  .summary-right>p,
+  .summary-left>p {
+    font-size: 0.8rem;
+    min-width: 5rem;
+    text-align: justify;
+    max-width: 15rem;
+  }
+
+  .summary-container>.summary-curriculum {
+    font-size: 0.8rem;
+  }
+
+  .summary-container>.summary-curriculum {
+    width: 75%;
+    min-width: 13rem;
   }
 
   /* FEATURED CONTENT */

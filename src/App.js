@@ -1,6 +1,6 @@
 import './index.css';
 import { Fade } from "react-awesome-reveal";
-
+import React, { useState, useEffect } from 'react';
 import ToolsIcons from './components/toolsSection/toolsFormat';
 import Footer from './components/footer';
 import PresentationLabel from './components/presentationLabel';
@@ -48,13 +48,20 @@ function App() {
             direction='down'
             className='fade-effect'
             triggerOnce='true'
-            fraction='1'
+            fraction='0'
           >
             <PresentationLabel />
           </Fade>
           <GoTop />
           <div className='content-container'>
-            <SummarySection />
+            <Fade
+              direction='down'
+              className='fade-effect'
+              triggerOnce='true'
+              fraction='0'              
+            >
+              <SummarySection />
+            </Fade>
             <ProjectFormat />
             <div className='career-container'>
               <CareerFormat />

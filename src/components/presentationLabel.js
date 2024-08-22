@@ -1,4 +1,3 @@
-import React from 'react';
 import { ReactComponent as Code } from '../imgs/logos/code-icon.svg';
 
 function PresentationLabel() {

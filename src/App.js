@@ -7,6 +7,8 @@ import PresentationLabel from './components/presentationLabel';
 import LanguageChanger from './components/languageChanger';
 import CareerFormat from './components/careerSection/careerFormat';
 import ProjectFormat from './components/featuredProjects/projectCardsFormat';
+import SummarySection from './components/summary';
+
 import GoTop from './utils/topButton';
 
 import { ReactComponent as GitHubLogo } from '../src/imgs/logos/github-icon.svg';
@@ -32,6 +34,14 @@ function App() {
         </div> */}
 
         {/* <------------------WIP PAGE PLACEHODER------------------> */}
+
+
+        {/* 
+            TODO: New section 'about me' need responsive fixes
+            TODO: New section 'about me' need easy data input
+            TODO: Add links
+            TODO: 
+        */}
         <div>
           <LanguageChanger />
           <Fade
@@ -44,6 +54,7 @@ function App() {
           </Fade>
           <GoTop />
           <div className='content-container'>
+            <SummarySection />
             <ProjectFormat />
             <div className='career-container'>
               <CareerFormat />

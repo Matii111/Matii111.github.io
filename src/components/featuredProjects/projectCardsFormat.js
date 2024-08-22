@@ -25,27 +25,27 @@ function centerPopup() {
     popup.style.top = `${top}px`;
 }
 
-function handleCloseOverlay() {
-    const overlays = [...document.getElementsByClassName('overlay')];
-    window.addEventListener('click', ({ target }) => {
-        const overlay = target.closest('.overlay');
-        const clickedOnClosedOverlay = overlay && !overlay.classList.contains('inactive');
-
-        overlays.forEach(p => p.classList.remove('inactive'));
-
-        if (clickedOnClosedOverlay) {
-            overlay.classList.add('inactive');
-            document.body.style.overflow = 'auto';
-        }
-    });
-}
 
 function ProjectFormat() {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [isProjectOpen, setProjectOpen] = useState(false);
     const [selectedId, setSelectedId] = useState(null);
 
-    handleCloseOverlay()
+    function handleCloseOverlay() {
+        const overlays = [...document.getElementsByClassName('overlay')];
+        window.addEventListener('click', ({ target }) => {
+            const overlay = target.closest('.overlay');
+            const clickedOnClosedOverlay = overlay && !overlay.classList.contains('inactive');
+
+            overlays.forEach(p => p.classList.remove('inactive'));
+
+            if (clickedOnClosedOverlay) {
+                overlay.classList.add('inactive');
+                document.body.style.overflow = 'auto';
+                setProjectOpen(false);
+            }
+        });
+    }
 
     useEffect(() => {
         if (isProjectOpen) {
@@ -57,6 +57,7 @@ function ProjectFormat() {
         setSelectedId(id);
         setProjectOpen(true);
         document.body.style.overflow = 'hidden';
+        handleCloseOverlay()
     }
 
     const handleProjectClose = () => {

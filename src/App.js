@@ -7,7 +7,7 @@ import PresentationLabel from './components/presentationLabel';
 import LanguageChanger from './components/languageChanger';
 import CareerFormat from './components/careerSection/careerFormat';
 import ProjectFormat from './components/featuredProjects/projectCardsFormat';
-import SummarySection from './components/summary';
+import SummarySection from './components/summarySection/summary';
 
 import GoTop from './utils/topButton';
 

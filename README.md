@@ -30,6 +30,6 @@ Web Page still not finished *<a href="https://matii111.github.io/">(WIP)</a>*.
 
 - Personal resume
 
-*<a href="https://github.com/user-attachments/assets/7112d672-4c86-49f3-8283-2e5e5bd3f10c">
+*<a href="https://github.com/user-attachments/assets/4628046a-98a6-4dc0-a9ae-e8c0a9409e3f">
   Personal resume here
 </a>*

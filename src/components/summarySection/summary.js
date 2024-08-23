@@ -31,7 +31,21 @@ function SummarySection() {
                 })}
             </div>
             <div className='summary-curriculum'>
-                <a> Curriculum resumen &gt;&gt;</a>
+                {SummaryData.map((data, index) => {
+                    return (
+                        <div key={index}>
+                            {
+                                data.id === 'URL' ? (
+                                    <a
+                                        target="_blank" rel="noopener noreferrer"
+                                        href={data.curriculumURL}
+                                    > Curriculum resumen &gt;&gt;
+                                    </a>
+                                ) : null
+                            }
+                        </div>
+                    );
+                })}
             </div>
         </div >
     );

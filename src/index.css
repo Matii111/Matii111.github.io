@@ -401,15 +401,19 @@ body {
   align-items: center;
 }
 
-.career-content>p {
+.career-content>div>p {
   color: var(--items-color-4);
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-shadow: 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+.career-content>div {
+  width: 75%;
 }
 
 .career-long-hr {
   border: 0.1rem solid var(--background-color-1);
-  width: 67%;
+  width: 90%;
   margin: 0;
   box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.3);
 }
@@ -420,7 +424,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-content: flex-start;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   padding-top: 5rem;
 }
 
@@ -452,7 +456,7 @@ body {
 .career-featured-container {
   position: absolute;
   display: flex;
-  margin-left: 11rem;
+  margin-left: 10%;
 }
 
 .career-featured-content {
@@ -532,6 +536,7 @@ body {
 
 .formation_description>.title {
   text-shadow: 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
+  text-align: left;
 }
 
 .formation_description>.paragraph {
@@ -552,6 +557,7 @@ body {
 
 .career-content-title {
   cursor: default;
+  margin-bottom: 6rem;
 }
 
 /* TOOLS SECTION */
@@ -1170,11 +1176,6 @@ body {
   }
 
   /* CAREER CONTENT */
-
-  .career-content-title {
-    left: -17rem;
-  }
-
   .career-title>.right-hr {
     width: 65%;
 
@@ -1307,10 +1308,6 @@ body {
     width: 55%;
   }
 
-  .career-long-hr {
-    width: 44rem;
-  }
-
   /* SPECIALITIES CONTENT */
 
   .tools-title {
@@ -1325,10 +1322,6 @@ body {
     margin-right: 7rem;
   }
 
-  .career-content-title {
-    left: -8rem;
-  }
-
   .horizontal-hr>p {
     font-size: 1.2rem;
     height: 0rem;
@@ -1336,10 +1329,6 @@ body {
 
   .career-content>.career-content-description {
     width: 74%;
-  }
-
-  .career-featured-container {
-    margin-left: 5rem;
   }
 
   .career-start-line>p,
@@ -1363,18 +1352,6 @@ body {
   /* CAREER SECTION */
   .career-content>p {
     font-size: 1.4rem;
-  }
-
-  .career-long-hr {
-    width: 38rem;
-  }
-
-  .career-content-title {
-    left: -8rem;
-  }
-
-  .career-featured-container {
-    margin-left: 5rem;
   }
 
   .career-featured-content {
@@ -1612,7 +1589,7 @@ body {
   }
 
   .career-long-hr {
-    width: 17rem;
+    width: 16rem;
   }
 
   .career-featured-content {
@@ -1620,7 +1597,8 @@ body {
   }
 
   .career-featured-container {
-    width: 18rem;
+    width: 15rem;
+    margin-left: 42%;
   }
 
   .career-featured-content>p {
@@ -1665,7 +1643,7 @@ body {
   }
 
   .career-content>.career-content-title {
-    font-size: 1.1rem;    
+    font-size: 1.1rem;
   }
 
   .career-title {
@@ -1881,7 +1859,7 @@ body {
   /* CAREER SECTION */
 
   .career-featured-container {
-    width: 7rem;
+    width: 0%;
   }
 
   .career-title {

@@ -17,16 +17,18 @@ function CareerCard() {
             {CareerData.map((content, index) => {
                 return (
                     <div className='career-content' key={index}>
-                        <p className='career-content-title'>
-                            <Fade
-                                direction='down'
-                                className='fade-effect'
-                                triggerOnce='true'
-                                fraction='1'
-                            >
-                                {content.formation_title}
-                            </Fade>
-                        </p>
+                        <div>
+                            <p className='career-content-title'>
+                                <Fade
+                                    direction='down'
+                                    className='fade-effect'
+                                    triggerOnce='true'
+                                    fraction='1'
+                                >
+                                    {content.formation_title}
+                                </Fade>
+                            </p>
+                        </div>
                         <Fade
                             direction='down'
                             className='fade-effect'

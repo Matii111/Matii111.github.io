@@ -248,7 +248,6 @@ body {
   font-size: 3rem;
   color: var(--items-color-1);
   cursor: default;
-  padding: 1rem;
   white-space: nowrap;
 }
 
@@ -263,7 +262,6 @@ body {
 .sumaries-container>div {
   width: fit-content;
   cursor: default;
-  padding: 1rem;
 }
 
 .summary-right>p,
@@ -272,13 +270,15 @@ body {
   min-width: 5rem;
   text-align: justify;
   max-width: 20rem;
+  padding: 1rem;
 }
 
-.summary-curriculum>a {
+.summary-curriculum>div>a {
   cursor: pointer;
   color: var(--items-color-1);
   transition: all 0.3s ease-in-out;
   padding-bottom: 1rem;
+  text-decoration: none;
 }
 
 .summary-container>.summary-curriculum {
@@ -289,9 +289,13 @@ body {
   padding-bottom: 2rem;
 }
 
-.summary-container>div>a:hover {
+.summary-curriculum>div>a:hover {
   color: var(--items-color-2);
   text-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
+}
+
+.summary-curriculum>div>a>svg {
+  height: 1rem;
 }
 
 
@@ -405,7 +409,7 @@ body {
 
 .career-long-hr {
   border: 0.1rem solid var(--background-color-1);
-  width: 63rem;
+  width: 67%;
   margin: 0;
   box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.3);
 }
@@ -522,9 +526,31 @@ body {
   width: 74%;
 }
 
+.career-content-description>p {
+  white-space: break-spaces;
+}
+
+.formation_description>.title {
+  text-shadow: 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+.formation_description>.paragraph {
+  font-size: 1rem;
+}
+
+.formation_description-title {
+  display: flex;
+  align-items: center;
+}
+
+.formation_description>div>.circle-title {
+  width: 0.7rem;
+  height: 0.7rem;
+  margin-right: 0.5rem;
+  background-color: var(--items-color-1);
+}
+
 .career-content-title {
-  left: -18rem;
-  position: relative;
   cursor: default;
 }
 
@@ -1062,8 +1088,11 @@ body {
   transition: all 0.2s ease;
 }
 
-.slideButtonNext>.next-btn:active,
 .slideButtonPrev>.prev-btn:active {
+  box-shadow: 0rem -0.1rem 0.2rem -0.2rem var(--background-color-1);
+}
+
+.slideButtonNext>.next-btn:active {
   box-shadow: 0rem 0.1rem 0.2rem -0.2rem var(--background-color-1);
 }
 
@@ -1144,10 +1173,6 @@ body {
 
   .career-content-title {
     left: -17rem;
-  }
-
-  .career-long-hr {
-    width: 64rem;
   }
 
   .career-title>.right-hr {
@@ -1328,7 +1353,7 @@ body {
   .career-featured-content>p {
     font-size: 0.8rem;
     rotate: calc(311deg);
-    margin-top: 3rem;
+    margin-top: 4rem;
     margin-left: -2rem;
   }
 }
@@ -1383,7 +1408,7 @@ body {
   }
 
   .career-featured-content>p {
-    margin-top: 2rem;
+    margin-top: 3rem;
     margin-left: 0rem;
   }
 
@@ -1510,6 +1535,10 @@ body {
     width: 72%;
   }
 
+  .summary-title {
+    justify-content: center;
+  }
+
   /* FEATURED PROJECTS */
 
   .featured-title>p {
@@ -1596,9 +1625,9 @@ body {
 
   .career-featured-content>p {
     font-size: 0.8rem;
-    rotate: calc(270deg);
+    rotate: calc(360deg);
     margin-top: 2rem;
-    margin-left: 0rem;
+    margin-left: 1rem;
   }
 
   .career-content>p {
@@ -1636,9 +1665,7 @@ body {
   }
 
   .career-content>.career-content-title {
-    margin-left: 9rem;
-    font-size: 1.1rem;
-    text-wrap: nowrap;
+    font-size: 1.1rem;    
   }
 
   .career-title {
@@ -1736,10 +1763,6 @@ body {
     margin: 0;
   }
 
-  .career-content>.career-content-title {
-    margin-left: 16rem;
-  }
-
   .career-long-hr {
     width: 15rem;
   }
@@ -1817,6 +1840,7 @@ body {
 
   /* FEATURED CONTENT */
 
+
   .featured-title>p {
     font-size: 1.2rem;
   }
@@ -1867,6 +1891,13 @@ body {
 
   .career-subtitle>.circle-title {
     border: 0rem;
+  }
+
+  .career-featured-content>p {
+    font-size: 0.8rem;
+    rotate: calc(270deg);
+    margin-top: 2rem;
+    margin-left: 1rem;
   }
 
   /* TOOLS SECTION */

@@ -281,17 +281,17 @@ body {
   text-decoration: none;
 }
 
+.summary-curriculum>div>a:hover {
+  color: var(--items-color-2);
+  text-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
+}
+
 .summary-container>.summary-curriculum {
   width: 59%;
   max-width: 41rem;
   display: flex;
   justify-content: flex-end;
   padding-bottom: 2rem;
-}
-
-.summary-curriculum>div>a:hover {
-  color: var(--items-color-2);
-  text-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
 }
 
 .summary-curriculum>div>a>svg {
@@ -893,21 +893,21 @@ body {
   width: 50rem;
   background: var(--background-color-1);
   flex-direction: row;
-  align-items: center;
   top: 14%;
   left: 30.5%;
   position: absolute;
   display: flex;
-  justify-content: center;
   border-radius: 0.5rem;
   box-shadow: 0rem 0rem 0.5rem var(--background-color-1);
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .project-preview {
   height: 90%;
   width: 90%;
   background-color: var(--background-color-1);
-  margin: 1rem;
   color: var(--items-color-2);
   display: flex;
   flex-direction: column;
@@ -920,9 +920,10 @@ body {
 .project-preview-title {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: nowrap;
+  padding-left: 1rem;
 }
 
 .project-preview-title>.circle-title {
@@ -936,8 +937,7 @@ body {
 }
 
 .project-preview-title>p {
-  font-size: 3rem;
-  color: var(--items-color-2);
+  font-size: 2rem;
   cursor: default;
 }
 
@@ -948,21 +948,34 @@ body {
 }
 
 .project-preview>.right-hr {
-  width: 20rem;
   border: 0.1rem solid var(--items-color-3);
   box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
 }
 
 .project-preview-left>p {
-  font-size: 1.3rem;
+  font-size: 1rem;
   padding-left: 3rem;
   color: var(--items-color-3);
   cursor: default;
+  width: 100%;
+  white-space: break-spaces;
 }
 
-.project-review-link {
-  color: var(--items-color-1) !important;
-  cursor: pointer !important;
+.project-review-link>a {
+  cursor: pointer;
+  color: var(--items-color-1);
+  transition: all 0.3s ease-in-out;
+  padding-bottom: 1rem;
+  text-decoration: none;
+}
+
+.project-review-link>a:hover {
+  color: var(--items-color-2);
+  text-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
+}
+
+.project-preview-left {
+  max-width: 65%;
 }
 
 .project-preview-right {
@@ -972,7 +985,7 @@ body {
   flex-wrap: nowrap;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .project-preview-right>img {
@@ -1042,6 +1055,7 @@ body {
 
 .middle-card>.project-info>.project-description {
   opacity: 1;
+  width: 14rem;
 }
 
 .middle-card {
@@ -1084,12 +1098,14 @@ body {
 
 .project-info {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   cursor: default;
+  justify-content: center;
 }
 
 .project-img-container {
-  margin-right: 20px;
+  margin-right: 1rem;
+  padding-top: 1rem;
 }
 
 .project-img-container img {

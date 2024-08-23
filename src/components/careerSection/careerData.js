@@ -1,4 +1,4 @@
-import project from '../../imgs/1280x720.svg';
+const PlaceholderIMG = 'https://res.cloudinary.com/dq6ua6vmy/image/upload/v1724443539/1280x720_i3w97x.svg';
 
 const CareerData = [
     {
@@ -11,7 +11,7 @@ const CareerData = [
                 { year: 'Jun 2023', description: 'PSYS' },
                 { year: 'Ago 2023', description: 'UNAB-Centro de alumnos' },
             ],
-        demo_image: { project },
+        demo_image: { PlaceholderIMG },
         formation_description:
             [
 

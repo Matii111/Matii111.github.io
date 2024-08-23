@@ -35,7 +35,8 @@ function ProjectFormat() {
         const overlays = [...document.getElementsByClassName('overlay')];
         window.addEventListener('click', ({ target }) => {
             const overlay = target.closest('.overlay');
-            const clickedOnClosedOverlay = overlay && !overlay.classList.contains('inactive');
+            const clickedOnClosedOverlay = overlay
+                && !overlay.classList.contains('inactive')                
 
             overlays.forEach(p => p.classList.remove('inactive'));
 
@@ -124,7 +125,13 @@ function ProjectFormat() {
                                         {project.content}
                                     </p>
                                     <p className='project-review-link'>
-                                        &gt;&gt;{project.link}
+                                        <a
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            href={project.link}
+                                        >
+                                            &gt;&gt;{project.link}
+                                        </a>
                                     </p>
                                 </div>
                                 <hr className='right-hr' />

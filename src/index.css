@@ -733,9 +733,42 @@ body {
   cursor: default;
 }
 
+.footer-item-mail {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 .items-icons {
   display: flex;
   justify-content: center;
+}
+
+.copied-color-mail,
+.copy-color-mail {
+  opacity: 0;
+  top: 5rem;
+  font-size: 0.7rem;
+  padding: 0.2rem;
+  position: absolute;
+  border: 0.01rem solid var(--items-color-2);
+  width: fit-content;
+  height: 2rem;
+  align-content: center;
+  background: var(--background-color-1);
+  color: var(--items-color-1);
+  cursor: default;
+  transition: 0.3s all ease-in-out;
+}
+
+.copy-color-mail.hover {
+  opacity: 1;
+  transition: 0.3s all ease-in-out;
+}
+
+.copied-color-mail.active {
+  opacity: 1;
+  transition: 0.3s all ease-in-out;
 }
 
 /* footer svgs */
@@ -764,7 +797,7 @@ body {
 
 .mail-svg-2 {}
 
-.items-icons>.footer-logos {
+.items-icons>a>.footer-logos {
   height: 2rem;
   width: 2rem;
   margin: 1rem;
@@ -772,12 +805,10 @@ body {
   cursor: pointer;
 }
 
-.items-icons>.footer-logos:hover {
+.items-icons>a>.footer-logos:hover {
   box-shadow: 0em 0.3em 0em 0em rgba(255, 255, 255, 0.1);
   padding-bottom: 0.3rem;
 }
-
-
 
 /* FEATURED CONTENT */
 

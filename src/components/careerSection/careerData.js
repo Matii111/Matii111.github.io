@@ -48,7 +48,7 @@ deficiente, además de ofrecerme mi primer contacto con un cliente real.
 {
     type:'title',
     content:
-`UNAB - Centro de alumnos`
+`Centro de alumnos UNAB`
 },
 {
     type:'paragraph',

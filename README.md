@@ -28,3 +28,8 @@ Web Page still not finished *<a href="https://matii111.github.io/">(WIP)</a>*.
   <img style='height:20rem;' src='https://github.com/user-attachments/assets/ffa84a53-bde0-41a6-ba91-9a314875567a'/>
 </div>
 
+- Personal resume
+
+*<a href="https://github.com/user-attachments/assets/7112d672-4c86-49f3-8283-2e5e5bd3f10c">
+  Personal resume here
+</a>*

@@ -1,8 +1,8 @@
 import './index.css';
 import { Fade } from "react-awesome-reveal";
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import ToolsIcons from './components/toolsSection/toolsFormat';
-import Footer from './components/footer';
+import Footer from './components/footerSection/footer';
 import PresentationLabel from './components/presentationLabel';
 import LanguageChanger from './components/languageChanger';
 import CareerFormat from './components/careerSection/careerFormat';
@@ -36,12 +36,11 @@ function App() {
         {/* <------------------WIP PAGE PLACEHODER------------------> */}
 
 
-        {/* 
-            TODO: New section 'about me' need responsive fixes
-            TODO: New section 'about me' need easy data input
-            TODO: Add links
-            TODO: 
+        {/*             
+            TODO: Add projects (color changer/tester, real webpage projects)
+            TODO: Center personal resume perhaps
         */}
+
         <div>
           <LanguageChanger />
           <Fade
@@ -58,7 +57,7 @@ function App() {
               direction='down'
               className='fade-effect'
               triggerOnce='true'
-              fraction='0'              
+              fraction='0'
             >
               <SummarySection />
             </Fade>

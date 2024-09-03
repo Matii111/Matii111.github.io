@@ -19,13 +19,15 @@ Plataforma desplagada en enlace.
     },
     {
         id: 2,
-        title: 'Proyecto 2',
-        image: PlaceholderIMG,
-        image2: PlaceholderIMG,
-        image3: PlaceholderIMG,
-        image4: PlaceholderIMG,
-        content: 'Descripción del proyecto 2.',
-        link: 'https://github.com/Matii111',
+        title: 'Extension Color Tester',
+        image: 'https://github.com/user-attachments/assets/af1cc75b-bbe7-4b09-a3f2-bf6e4c96a893',
+        image2: 'https://github.com/user-attachments/assets/7ff735ed-015a-4685-bb07-cbdea94eb1d6',
+        content:
+            'Extension que permite probar colores al momento \
+de desarrollar una plataforma web. Permite seleccionar colores \
+al activar hover sobre las clases de los elementos, ademas de \
+copiar el color HEX y buscar por clases especificas.',
+        link: 'https://github.com/Matii111/extension_test',
     },
     {
         id: 3,

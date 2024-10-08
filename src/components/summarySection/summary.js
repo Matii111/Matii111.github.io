@@ -1,11 +1,20 @@
 import SummaryData from "./summaryData";
-function SummarySection() {
+function SummarySection({ isTraslatedLanguage }) {
     return (
         <div className='summary-container'>
             <div className='summary-title'>
-                <p>
-                    Sobre mi &gt;&gt;
-                </p>
+                {isTraslatedLanguage ? (
+                    //eng version
+                    <p>
+                        About me &gt;&gt;
+                    </p>
+                ) :
+                    //spa version
+                    <p>
+                        Sobre mi &gt;&gt;
+                    </p>
+                }
+
             </div>
             <div className='sumaries-container'>
                 {SummaryData.map((data, index) => {
@@ -14,15 +23,25 @@ function SummarySection() {
                             {
                                 data.id === 'leftContent' ? (
                                     <div className='summary-left'>
-                                        <p>
+                                        {isTraslatedLanguage ? (
+                                            <p>
+                                                {data.contentEn}
+                                            </p>
+                                        ) : <p>
                                             {data.content}
                                         </p>
+                                        }
                                     </div>
                                 ) : data.id === 'rightContent' ? (
                                     <div className='summary-right'>
-                                        <p>
+                                        {isTraslatedLanguage ? (
+                                            <p>
+                                                {data.contentEn}
+                                            </p>
+                                        ) : <p>
                                             {data.content}
                                         </p>
+                                        }
                                     </div>
                                 ) : null
                             }
@@ -39,7 +58,14 @@ function SummarySection() {
                                     <a
                                         target="_blank" rel="noopener noreferrer"
                                         href={data.curriculumURL}
-                                    > Curriculum resumen &gt;&gt;
+                                    >
+                                        {isTraslatedLanguage ? (
+                                            //eng version
+                                            <p>Personal Summary &gt;&gt;</p>
+                                        ) :
+                                            //spa version
+                                            <p>Curriculum resumen &gt;&gt;</p>
+                                        }
                                     </a>
                                 ) : null
                             }

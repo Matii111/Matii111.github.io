@@ -1,16 +1,23 @@
 import ToolsIcons from "./toolsData";
 
-function ToolsIconsFormat() {
+function ToolsIconsFormat({ isTraslatedLanguage }) {
     return (
         <>
             <div className='tools-title'>
                 <div className='circle-title' />
                 <hr className='left-hr' />
-                <p>
-                    Especialidades
-                </p>
+                {isTraslatedLanguage ? (
+                    <p>
+                        Specialities
+                    </p>
+                ) :
+                    <p>
+                        Especialidades
+                    </p>
+                }
+
                 <hr className='right-hr' />
-            </div>
+            </div >
             <div className='tools-content'>
                 {ToolsIcons.map((tools, index) => (
                     <div className='tool-item' key={index}>

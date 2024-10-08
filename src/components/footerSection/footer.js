@@ -5,7 +5,7 @@ import { ReactComponent as LinkedinLogo } from '../../imgs/logos/linkedin-icon.s
 
 import FooterData from './footerData';
 
-function Footer() {
+function Footer({ isTraslatedLanguage }) {
     const [hover, setHover] = useState(false);
     const [mail, setMail] = useState(false);
 
@@ -14,14 +14,20 @@ function Footer() {
             <div className='footer-title'>
                 <div className='circle-title' ></div>
                 <hr className='left-hr' />
-                <p>Muchas gracias por llegar hasta aqui</p>
+                {isTraslatedLanguage ? (
+                    <p>Thanks you for read</p>
+                ) :
+                    <p>Muchas gracias por llegar hasta aqui</p>
+                }
                 <hr className='right-hr' />
                 <div className='circle-title' ></div>
             </div>
             <div className='footer-items'>
-                <p>
-                    Redes de contacto
-                </p>
+                {isTraslatedLanguage ? (
+                    <p>Contact Networks</p>
+                ) :
+                    <p>Redes de Contacto</p>
+                }
                 <div className='items-icons'>
                     {FooterData.map((footer, index) => {
                         return (

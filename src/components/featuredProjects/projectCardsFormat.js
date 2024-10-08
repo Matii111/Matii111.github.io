@@ -26,7 +26,7 @@ function centerPopup() {
 }
 
 
-function ProjectFormat() {
+function ProjectFormat({ isTraslatedLanguage }) {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [isProjectOpen, setProjectOpen] = useState(false);
     const [selectedId, setSelectedId] = useState(null);
@@ -36,7 +36,7 @@ function ProjectFormat() {
         window.addEventListener('click', ({ target }) => {
             const overlay = target.closest('.overlay');
             const clickedOnClosedOverlay = overlay
-                && !overlay.classList.contains('inactive')                
+                && !overlay.classList.contains('inactive')
 
             overlays.forEach(p => p.classList.remove('inactive'));
 
@@ -102,9 +102,13 @@ function ProjectFormat() {
                 <div className='featured-title'>
                     <div className='circle-title' ></div>
                     <hr className='left-hr' />
-                    <p>
-                        Proyectos destacados
-                    </p>
+                    {isTraslatedLanguage ? (
+                        //eng 
+                        <p>Featured Projects</p>
+                    ) :
+                        //spa
+                        <p>Proyectos destacados</p>
+                    }
                     <hr className='right-hr' />
                 </div>
             </Fade>
@@ -117,13 +121,29 @@ function ProjectFormat() {
                                     <div className='project-preview-title'>
                                         <div className='circle-title' ></div>
                                         <hr className='left-hr' />
-                                        <p>
-                                            {project.title}
-                                        </p>
+                                        {isTraslatedLanguage ? (
+                                            //eng
+                                            <p>
+                                                {project.titleEn}
+                                            </p>
+                                        ) :
+                                            //spa
+                                            <p>
+                                                {project.titleEn}
+                                            </p>
+                                        }
                                     </div>
-                                    <p>
-                                        {project.content}
-                                    </p>
+                                    {isTraslatedLanguage ? (
+                                        //eng
+                                        <p>
+                                            {project.contentEn}
+                                        </p>
+                                    ) :
+                                        //spa
+                                        <p>
+                                            {project.content}
+                                        </p>
+                                    }
                                     <p className='project-review-link'>
                                         <a
                                             target="_blank"
@@ -154,14 +174,26 @@ function ProjectFormat() {
                                 className={`project-card ${currentSlide === index ? '' : nextSlide === index ? 'middle-card' : ''}`}
                                 key={index}
                             >
-                                <p className="project-title">{project.title}</p>
+                                {isTraslatedLanguage ? (
+                                    //eng
+                                    <p className="project-title">{project.titleEn}</p>
+                                ) :
+                                    //spa
+                                    <p className="project-title">{project.title}</p>
+                                }
                                 <hr />
                                 <div className="project-info">
                                     <div className="project-img-container" onClick={() => handleProjectOpen(project.id)}>
                                         <img src={project.image} alt={project.title} />
                                     </div>
                                     <div className="project-description">
-                                        <p>{project.content}</p>
+                                        {isTraslatedLanguage ? (
+                                            //eng
+                                            <p>{project.contentEn}</p>
+                                        ) :
+                                            //spa
+                                            <p>{project.content}</p>
+                                        }
                                     </div>
                                 </div>
                             </div>

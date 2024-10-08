@@ -2,7 +2,7 @@ import React from 'react';
 import { Fade } from 'react-awesome-reveal';
 import CareerCard from './careerCards';
 
-function CareerFormat() {
+function CareerFormat({ isTraslatedLanguage }) {
     return (
         <>
             <div className="section">
@@ -15,7 +15,11 @@ function CareerFormat() {
                     <div className='career-title'>
                         <div className='circle-title' />
                         <hr className='left-hr' />
-                        <p>Trayectoria</p>
+                        {isTraslatedLanguage ? (
+                            <p>Career</p>
+                        ) :
+                            <p>Trayectoria</p>
+                        }
                         <hr className='right-hr' />
                     </div>
                 </Fade>
@@ -28,11 +32,17 @@ function CareerFormat() {
                     <div className='career-subtitle'>
                         <div className='circle-title' />
                         <hr className='left-hr' />
-                        <p>Formacion</p>
+                        {isTraslatedLanguage ? (
+                            <p>Formation</p>
+                        ) :
+                            <p>Formacion</p>
+                        }
                         <hr className='right-hr' />
                     </div>
                 </Fade>
-                <CareerCard />
+                <CareerCard
+                    isTraslatedLanguage={isTraslatedLanguage}
+                />
                 <div className='centered'>
                     <Fade
                         direction='down'

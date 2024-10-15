@@ -1,4 +1,15 @@
 import SummaryData from "./summaryData";
+import { DelayedText } from "../../utils/traslator";
+const aboutMe = [
+    { eng: "About me >>" },
+    { esp: "Sobre mi >>" },
+];
+
+const summary = [
+    { eng: "Personal Summary >>" },
+    { esp: "Curriculum Resumen >>" },
+];
+
 function SummarySection({ isTraslatedLanguage }) {
     return (
         <div className='summary-container'>
@@ -6,12 +17,14 @@ function SummarySection({ isTraslatedLanguage }) {
                 {isTraslatedLanguage ? (
                     //eng version
                     <p>
-                        About me &gt;&gt;
+                        <DelayedText
+                            text={aboutMe[0].eng}
+                        />
                     </p>
                 ) :
                     //spa version
                     <p>
-                        Sobre mi &gt;&gt;
+                        <DelayedText text={aboutMe[1].esp}/>
                     </p>
                 }
 
@@ -25,10 +38,16 @@ function SummarySection({ isTraslatedLanguage }) {
                                     <div className='summary-left'>
                                         {isTraslatedLanguage ? (
                                             <p>
-                                                {data.contentEn}
+                                                <DelayedText
+                                                    text={data.contentEn}
+                                                    delay={10}
+                                                />
                                             </p>
                                         ) : <p>
-                                            {data.content}
+                                            <DelayedText
+                                                text={data.content}
+                                                delay={10}                                  
+                                            />
                                         </p>
                                         }
                                     </div>
@@ -36,10 +55,16 @@ function SummarySection({ isTraslatedLanguage }) {
                                     <div className='summary-right'>
                                         {isTraslatedLanguage ? (
                                             <p>
-                                                {data.contentEn}
+                                                <DelayedText
+                                                    text={data.contentEn}
+                                                    delay={10}
+                                                />
                                             </p>
                                         ) : <p>
-                                            {data.content}
+                                            <DelayedText
+                                                text={data.content}
+                                                delay={10}
+                                            />
                                         </p>
                                         }
                                     </div>
@@ -61,10 +86,13 @@ function SummarySection({ isTraslatedLanguage }) {
                                     >
                                         {isTraslatedLanguage ? (
                                             //eng version
-                                            <p>Personal Summary &gt;&gt;</p>
+                                            <p>
+                                                <DelayedText text={summary[0].eng} />
+                                            </p>
                                         ) :
                                             //spa version
-                                            <p>Curriculum resumen &gt;&gt;</p>
+                                            <p><DelayedText text={summary[1].esp} />
+                                            </p>
                                         }
                                     </a>
                                 ) : null

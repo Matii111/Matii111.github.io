@@ -1,6 +1,6 @@
 import CareerData from "./careerData";
 import { Fade } from "react-awesome-reveal";
-
+import { DelayedText } from '../../utils/traslator.js';
 const TitleFixer = ({ featured_description }) => {
     const featuredTitleLong = featured_description.length > 11;
 
@@ -26,7 +26,10 @@ function CareerCard({ isTraslatedLanguage }) {
                                         triggerOnce='true'
                                         fraction='1'
                                     >
-                                        {content.formation_title_en}
+                                        <DelayedText
+                                            text={content.formation_title_en}
+                                        />
+
                                     </Fade>
                                 </p>
                             ) :
@@ -37,7 +40,9 @@ function CareerCard({ isTraslatedLanguage }) {
                                         triggerOnce='true'
                                         fraction='1'
                                     >
-                                        {content.formation_title}
+                                        <DelayedText
+                                            text={content.formation_title}
+                                        />
                                     </Fade>
                                 </p>
                             }
@@ -51,12 +56,20 @@ function CareerCard({ isTraslatedLanguage }) {
                             <div className='career-line'>
                                 <div className='career-start-line'>
                                     <div className='circle-title' />
-                                    <p>{content.start_year}</p>
+                                    <p>
+                                        <DelayedText
+                                            text={content.start_year}
+                                        />
+                                    </p>
                                 </div>
                                 <hr className='career-long-hr'></hr>
                                 <div className='career-end-line'>
                                     <div className='circle-title' />
-                                    <p>{content.end_year}</p>
+                                    <p>
+                                        <DelayedText
+                                            text={content.end_year}
+                                        />
+                                    </p>
                                 </div>
                                 <div className='career-featured-container'>
                                     {isTraslatedLanguage ? (
@@ -68,9 +81,17 @@ function CareerCard({ isTraslatedLanguage }) {
                                                 <div className='circle-title' />
                                                 <div className='horizontal-hr'>
                                                     <hr />
-                                                    <TitleFixer featured_description={featured.description} />
+                                                    <TitleFixer featured_description=
+                                                        {
+                                                            <DelayedText
+                                                                text={featured.description}
+                                                            />} />
                                                 </div>
-                                                <p>{featured.year}</p>
+                                                <p>
+                                                    <DelayedText
+                                                        text={featured.year}
+                                                    />
+                                                </p>
                                             </div>
                                         ))
                                     ) :
@@ -82,9 +103,18 @@ function CareerCard({ isTraslatedLanguage }) {
                                                 <div className='circle-title' />
                                                 <div className='horizontal-hr'>
                                                     <hr />
-                                                    <TitleFixer featured_description={featured.description} />
+                                                    <TitleFixer featured_description=
+                                                        {
+                                                            <DelayedText
+                                                                text={featured.description}
+                                                            />
+                                                        } />
                                                 </div>
-                                                <p>{featured.year}</p>
+                                                <p>
+                                                    <DelayedText
+                                                        text={featured.year}
+                                                    />
+                                                </p>
                                             </div>
                                         ))
                                     }
@@ -107,13 +137,17 @@ function CareerCard({ isTraslatedLanguage }) {
                                                         <div className="formation_description-title">
                                                             <div class="circle-title" />
                                                             <p className="title">
-                                                                {text.content}
+                                                                <DelayedText
+                                                                    text={text.content}
+                                                                />
                                                             </p>
                                                         </div>
                                                     ) :
                                                         text.type === 'paragraph' ? (
                                                             <p className="paragraph">
-                                                                {text.content}
+                                                                <DelayedText
+                                                                    text={text.content}
+                                                                />
                                                             </p>
                                                         ) : null
                                                 }
@@ -129,13 +163,19 @@ function CareerCard({ isTraslatedLanguage }) {
                                                         <div className="formation_description-title">
                                                             <div class="circle-title" />
                                                             <p className="title">
-                                                                {text.content}
+                                                                <DelayedText
+                                                                    text={text.content}
+                                                                    delay={2}
+                                                                />
                                                             </p>
                                                         </div>
                                                     ) :
                                                         text.type === 'paragraph' ? (
                                                             <p className="paragraph">
-                                                                {text.content}
+                                                                <DelayedText
+                                                                    text={text.content}
+                                                                    delay={2}
+                                                                />
                                                             </p>
                                                         ) : null
                                                 }

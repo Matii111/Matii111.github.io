@@ -5,6 +5,17 @@ import { ReactComponent as LinkedinLogo } from '../../imgs/logos/linkedin-icon.s
 
 import FooterData from './footerData';
 
+const footerContent = [
+    { titleEng: "Thanks you for read" },
+    { titleEsp: "Muchas gracias por llegar hasta aqui" },
+    { networksEsp: "Redes sociales" },
+    { networksEng: "Contact Networks" },
+    { mailEsp: "Copiar Mail" },
+    { mailCopiadoEsp: "Mail Copiado" },
+    { mailEng: "Copy Mail" },
+    { mailCopiadoEng: "Mail Copied" }
+];
+
 function Footer({ isTraslatedLanguage }) {
     const [hover, setHover] = useState(false);
     const [mail, setMail] = useState(false);
@@ -15,18 +26,26 @@ function Footer({ isTraslatedLanguage }) {
                 <div className='circle-title' ></div>
                 <hr className='left-hr' />
                 {isTraslatedLanguage ? (
-                    <p>Thanks you for read</p>
+                    <p>
+                        {footerContent[0].titleEng}
+                    </p>
                 ) :
-                    <p>Muchas gracias por llegar hasta aqui</p>
+                    <p>
+                        {footerContent[1].titleEsp}
+                    </p>
                 }
                 <hr className='right-hr' />
                 <div className='circle-title' ></div>
             </div>
             <div className='footer-items'>
                 {isTraslatedLanguage ? (
-                    <p>Contact Networks</p>
+                    <p>
+                        {footerContent[3].networksEng}
+                    </p>
                 ) :
-                    <p>Redes de Contacto</p>
+                    <p>
+                        {footerContent[2].networksEsp}
+                    </p>
                 }
                 <div className='items-icons'>
                     {FooterData.map((footer, index) => {
@@ -68,8 +87,28 @@ function Footer({ isTraslatedLanguage }) {
                                                     }
                                                 >
                                                     <MailLogo className='footer-logos' alt='Copiar correo' />
-                                                    <p className={`copy-color-mail ${hover ? 'hover' : ''}`}>Copiar mail</p>
-                                                    <p className={`copied-color-mail ${mail ? 'active' : ''}`}>Mail copiado</p>
+
+
+                                                    {isTraslatedLanguage ? (
+                                                        <>
+                                                            <p className={`copy-color-mail ${hover ? 'hover' : ''}`}>
+                                                                {footerContent[6].mailEng}
+                                                            </p>
+                                                            <p className={`copied-color-mail ${mail ? 'active' : ''}`}>
+                                                                {footerContent[7].mailCopiadoEng}
+                                                            </p>
+                                                        </>
+                                                    ) : (
+                                                        <>
+                                                            <p className={`copy-color-mail ${hover ? 'hover' : ''}`}>
+                                                                {footerContent[4].mailEsp}
+                                                            </p>
+                                                            <p className={`copied-color-mail ${mail ? 'active' : ''}`}>
+                                                                {footerContent[5].mailCopiadoEsp}
+                                                            </p>
+                                                        </>
+                                                    )
+                                                    }
                                                 </a>
                                             ) : null
                                 }

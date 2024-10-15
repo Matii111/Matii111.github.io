@@ -201,6 +201,8 @@ body {
   width: 20rem;
   cursor: default;
   text-shadow: 0.1rem 0.3rem rgb(0 0 0 / 61%);
+  display: flex;
+  flex-direction: column;
 }
 
 .description {
@@ -332,7 +334,7 @@ body {
 }
 
 .career-title>.right-hr {
-  width: 67%;
+  width: 79rem;
   box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
 }
 
@@ -375,7 +377,7 @@ body {
 }
 
 .career-subtitle>.right-hr {
-  width: 60%;
+  width: 74%;
   box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
 }
 
@@ -527,7 +529,7 @@ body {
   font-size: 1.3rem;
   cursor: default;
   text-align: justify;
-  width: 74%;
+  width: 70rem;
 }
 
 .career-content-description>p {

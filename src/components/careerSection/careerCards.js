@@ -147,6 +147,7 @@ function CareerCard({ isTraslatedLanguage }) {
                                                             <p className="paragraph">
                                                                 <DelayedText
                                                                     text={text.content}
+                                                                    delay={5}
                                                                 />
                                                             </p>
                                                         ) : null
@@ -164,8 +165,7 @@ function CareerCard({ isTraslatedLanguage }) {
                                                             <div class="circle-title" />
                                                             <p className="title">
                                                                 <DelayedText
-                                                                    text={text.content}
-                                                                    delay={2}
+                                                                    text={text.content}                                                                   
                                                                 />
                                                             </p>
                                                         </div>
@@ -174,7 +174,7 @@ function CareerCard({ isTraslatedLanguage }) {
                                                             <p className="paragraph">
                                                                 <DelayedText
                                                                     text={text.content}
-                                                                    delay={2}
+                                                                    delay={5}
                                                                 />
                                                             </p>
                                                         ) : null

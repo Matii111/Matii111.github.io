@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 export function DelayedText({
     text,
-    delay = 30
+    delay = 30,
 }) {
     const [displayedText, setDisplayedText] = useState('');
     const [index, setIndex] = useState(0);
@@ -22,8 +22,10 @@ export function DelayedText({
                 setDisplayedText(updatedText);
                 setIndex(prev => prev + 1);
             }, delay);
-            return () => clearTimeout(timeout);
-        }
+            return () => {
+                clearTimeout(timeout);
+            }
+        }  
     }, [index, text, displayedText]);
 
     return <span>{displayedText}</span>;

@@ -224,6 +224,7 @@ function ProjectFormat({ isTraslatedLanguage }) {
                                             <p>
                                                 <DelayedText
                                                     text={project.contentEn}
+                                                    delay={5}
                                                 />
                                             </p>
                                         ) :
@@ -231,6 +232,7 @@ function ProjectFormat({ isTraslatedLanguage }) {
                                             <p>
                                                 <DelayedText
                                                     text={project.content}
+                                                    delay={5}
                                                 />
                                             </p>
                                         }

@@ -161,7 +161,15 @@ body {
   font-size: 1rem;
   color: var(--items-color-3);
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
+
+.language-changer-translating {
+  opacity: 0.7;
+  cursor: default !important;
+  transition: all 0.3s ease-in-out;
+}
+
 
 .containerWorking a {
   display: flex;

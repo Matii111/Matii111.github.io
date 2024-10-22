@@ -1,5 +1,5 @@
 import { ReactComponent as Code } from '../imgs/logos/code-icon.svg';
-import { DelayedText } from '../utils/traslator.js';
+import { TextDisplay } from '../utils/textDisplay.js';
 
 const presentationEn = [
     { presentation: "Hi,I'm" },
@@ -21,22 +21,22 @@ function PresentationLabel({ isTraslatedLanguage }) {
                     // eng version
                     <>
                         <p className='presentation'>
-                            <DelayedText text={presentationEn[0].presentation} />
-                            <DelayedText text={presentationEn[1].name} />
+                            <TextDisplay text={presentationEn[0].presentation} />
+                            <TextDisplay text={presentationEn[1].name} />
                         </p>
                         <p className='description'>
-                            <DelayedText text={presentationEn[2].description} />
+                            <TextDisplay text={presentationEn[2].description} />
                         </p>
                     </>
                 ) : (
                     // esp version
                     <>
                         <p className='presentation'>
-                            <DelayedText text={presentation[0].presentation} />
-                            <DelayedText text={presentation[1].name} />
+                            <TextDisplay text={presentation[0].presentation} />
+                            <TextDisplay text={presentation[1].name} />
                         </p>
                         <p className='description'>
-                            <DelayedText text={presentation[2].description} />
+                            <TextDisplay text={presentation[2].description} />
                         </p>
                     </>
                 )}

@@ -1,5 +1,5 @@
 import SummaryData from "./summaryData";
-import { DelayedText } from "../../utils/traslator";
+import { TextDisplay } from "../../utils/textDisplay.js";
 const aboutMe = [
     { eng: "About me >>" },
     { esp: "Sobre mi >>" },
@@ -17,14 +17,14 @@ function SummarySection({ isTraslatedLanguage }) {
                 {isTraslatedLanguage ? (
                     //eng version
                     <p>
-                        <DelayedText
+                        <TextDisplay
                             text={aboutMe[0].eng}
                         />
                     </p>
                 ) :
                     //spa version
                     <p>
-                        <DelayedText text={aboutMe[1].esp}/>
+                        <TextDisplay text={aboutMe[1].esp}/>
                     </p>
                 }
 
@@ -38,13 +38,13 @@ function SummarySection({ isTraslatedLanguage }) {
                                     <div className='summary-left'>
                                         {isTraslatedLanguage ? (
                                             <p>
-                                                <DelayedText
+                                                <TextDisplay
                                                     text={data.contentEn}
                                                     delay={10}
                                                 />
                                             </p>
                                         ) : <p>
-                                            <DelayedText
+                                            <TextDisplay
                                                 text={data.content}
                                                 delay={10}                                  
                                             />
@@ -55,13 +55,13 @@ function SummarySection({ isTraslatedLanguage }) {
                                     <div className='summary-right'>
                                         {isTraslatedLanguage ? (
                                             <p>
-                                                <DelayedText
+                                                <TextDisplay
                                                     text={data.contentEn}
                                                     delay={10}
                                                 />
                                             </p>
                                         ) : <p>
-                                            <DelayedText
+                                            <TextDisplay
                                                 text={data.content}
                                                 delay={10}
                                             />
@@ -87,11 +87,11 @@ function SummarySection({ isTraslatedLanguage }) {
                                         {isTraslatedLanguage ? (
                                             //eng version
                                             <p>
-                                                <DelayedText text={summary[0].eng} />
+                                                <TextDisplay text={summary[0].eng} />
                                             </p>
                                         ) :
                                             //spa version
-                                            <p><DelayedText text={summary[1].esp} />
+                                            <p><TextDisplay text={summary[1].esp} />
                                             </p>
                                         }
                                     </a>

@@ -1,5 +1,5 @@
 import ToolsIcons from "./toolsData";
-import { DelayedText } from "../../utils/traslator";
+import { TextDisplay } from "../../utils/textDisplay";
 const specialitiesContent = [
     { titleEng: "Specialities" },
     { titleEsp: "Especialidades" },
@@ -12,11 +12,11 @@ function ToolsIconsFormat({ isTraslatedLanguage }) {
                 <hr className='left-hr' />
                 {isTraslatedLanguage ? (
                     <p>
-                        <DelayedText text={specialitiesContent[0].titleEng} />
+                        <TextDisplay text={specialitiesContent[0].titleEng} />
                     </p>
                 ) :
                     <p>
-                        <DelayedText text={specialitiesContent[1].titleEsp} />
+                        <TextDisplay text={specialitiesContent[1].titleEsp} />
                     </p>
                 }
 

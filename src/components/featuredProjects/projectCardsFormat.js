@@ -9,7 +9,7 @@ import { ReactComponent as Close } from '../../imgs/logos/close-icon.svg';
 import { ReactComponent as Next } from '../../imgs/logos/next-slider-icon.svg';
 import { ReactComponent as Prev } from '../../imgs/logos/prev-slider-icon.svg';
 
-import { DelayedText } from '../../utils/traslator';
+import { TextDisplay } from '../../utils/textDisplay.js';
 
 const featuredContent = [
     { titleEng: "Featured Projects" },
@@ -113,14 +113,14 @@ function ProjectFormat({ isTraslatedLanguage }) {
                     {isTraslatedLanguage ? (
                         //eng 
                         <p>
-                            <DelayedText
-                                text={featuredContent[0].titleEng}             
+                            <TextDisplay
+                                text={featuredContent[0].titleEng}
                             />
                         </p>
                     ) :
                         //spa
                         <p>
-                            <DelayedText
+                            <TextDisplay
                                 text={featuredContent[1].titleEsp}
                             />
                         </p>
@@ -140,32 +140,23 @@ function ProjectFormat({ isTraslatedLanguage }) {
                                         {isTraslatedLanguage ? (
                                             //eng
                                             <p>
-                                                <DelayedText
-                                                    text={project.titleEn}
-                                                />
+                                                {project.titleEn}
                                             </p>
                                         ) :
                                             //spa
                                             <p>
-                                                <DelayedText
-                                                    text={project.title}
-                                                />
+                                                {project.title}
                                             </p>
                                         }
                                     </div>
                                     {isTraslatedLanguage ? (
                                         //eng
-                                        <p>
-                                            <DelayedText
-                                                text={project.contentEn}
-                                            />
+                                        <p>{project.contentEn}
                                         </p>
                                     ) :
                                         //spa
                                         <p>
-                                            <DelayedText
-                                                text={project.content}
-                                            />
+                                            {project.content}
                                         </p>
                                     }
                                     <p className='project-review-link'>
@@ -201,16 +192,12 @@ function ProjectFormat({ isTraslatedLanguage }) {
                                 {isTraslatedLanguage ? (
                                     //eng
                                     <p className="project-title">
-                                        <DelayedText
-                                            text={project.titleEn}
-                                        />
+                                        {project.titleEn}
                                     </p>
                                 ) :
                                     //spa
                                     <p className="project-title">
-                                        <DelayedText
-                                            text={project.title}
-                                        />
+                                        {project.title}
                                     </p>
                                 }
                                 <hr />
@@ -222,18 +209,12 @@ function ProjectFormat({ isTraslatedLanguage }) {
                                         {isTraslatedLanguage ? (
                                             //eng
                                             <p>
-                                                <DelayedText
-                                                    text={project.contentEn}
-                                                    delay={5}
-                                                />
+                                                {project.contentEn}
                                             </p>
                                         ) :
                                             //spa
                                             <p>
-                                                <DelayedText
-                                                    text={project.content}
-                                                    delay={5}
-                                                />
+                                                {project.content}
                                             </p>
                                         }
                                     </div>

@@ -1,6 +1,6 @@
 import CareerData from "./careerData";
 import { Fade } from "react-awesome-reveal";
-import { DelayedText } from '../../utils/traslator.js';
+import { TextDisplay } from '../../utils/textDisplay.js';
 const TitleFixer = ({ featured_description }) => {
     const featuredTitleLong = featured_description.length > 11;
 
@@ -26,7 +26,7 @@ function CareerCard({ isTraslatedLanguage }) {
                                         triggerOnce='true'
                                         fraction='1'
                                     >
-                                        <DelayedText
+                                        <TextDisplay
                                             text={content.formation_title_en}
                                         />
 
@@ -40,7 +40,7 @@ function CareerCard({ isTraslatedLanguage }) {
                                         triggerOnce='true'
                                         fraction='1'
                                     >
-                                        <DelayedText
+                                        <TextDisplay
                                             text={content.formation_title}
                                         />
                                     </Fade>
@@ -57,7 +57,7 @@ function CareerCard({ isTraslatedLanguage }) {
                                 <div className='career-start-line'>
                                     <div className='circle-title' />
                                     <p>
-                                        <DelayedText
+                                        <TextDisplay
                                             text={content.start_year}
                                         />
                                     </p>
@@ -66,7 +66,7 @@ function CareerCard({ isTraslatedLanguage }) {
                                 <div className='career-end-line'>
                                     <div className='circle-title' />
                                     <p>
-                                        <DelayedText
+                                        <TextDisplay
                                             text={content.end_year}
                                         />
                                     </p>
@@ -83,12 +83,12 @@ function CareerCard({ isTraslatedLanguage }) {
                                                     <hr />
                                                     <TitleFixer featured_description=
                                                         {
-                                                            <DelayedText
+                                                            <TextDisplay
                                                                 text={featured.description}
                                                             />} />
                                                 </div>
                                                 <p>
-                                                    <DelayedText
+                                                    <TextDisplay
                                                         text={featured.year}
                                                     />
                                                 </p>
@@ -105,13 +105,13 @@ function CareerCard({ isTraslatedLanguage }) {
                                                     <hr />
                                                     <TitleFixer featured_description=
                                                         {
-                                                            <DelayedText
+                                                            <TextDisplay
                                                                 text={featured.description}
                                                             />
                                                         } />
                                                 </div>
                                                 <p>
-                                                    <DelayedText
+                                                    <TextDisplay
                                                         text={featured.year}
                                                     />
                                                 </p>
@@ -137,7 +137,7 @@ function CareerCard({ isTraslatedLanguage }) {
                                                         <div className="formation_description-title">
                                                             <div class="circle-title" />
                                                             <p className="title">
-                                                                <DelayedText
+                                                                <TextDisplay
                                                                     text={text.content}
                                                                 />
                                                             </p>
@@ -145,7 +145,7 @@ function CareerCard({ isTraslatedLanguage }) {
                                                     ) :
                                                         text.type === 'paragraph' ? (
                                                             <p className="paragraph">
-                                                                <DelayedText
+                                                                <TextDisplay
                                                                     text={text.content}
                                                                     delay={5}
                                                                 />
@@ -164,7 +164,7 @@ function CareerCard({ isTraslatedLanguage }) {
                                                         <div className="formation_description-title">
                                                             <div class="circle-title" />
                                                             <p className="title">
-                                                                <DelayedText
+                                                                <TextDisplay
                                                                     text={text.content}                                                                   
                                                                 />
                                                             </p>
@@ -172,7 +172,7 @@ function CareerCard({ isTraslatedLanguage }) {
                                                     ) :
                                                         text.type === 'paragraph' ? (
                                                             <p className="paragraph">
-                                                                <DelayedText
+                                                                <TextDisplay
                                                                     text={text.content}
                                                                     delay={5}
                                                                 />

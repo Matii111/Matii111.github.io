@@ -8,16 +8,17 @@ Web Page still not finished *<a href="https://matii111.github.io/">(WIP)</a>*.
 
 # Future features
 
-- Language changer button: Allows users to swap page content between spanish and english with an epic animation.
-- Add a Brief Resume/CV description: Includes a semi-formal curriculum version
+- ~~Language changer button: Allows users to swap page content between spanish and english with an epic animation.~~
+- ~~Add a Brief Resume/CV description: Includes a semi-formal curriculum version~~
 - Add projects:
   - Learning projects:
-    - Color picker extension
+    - ~~Color picker extension~~
+    - Some JS app based --> WIP (TextDisplay with animations from string to span)
+    - Some webpage fullstack (2nd)
+    - Some windows executable app (With Electron)
     - Movie/series finder
     - Some discord bot
-    - Some windows executable app
-    - Some JS app based
-  - Deployed projects
+  
 
 # Misc files
 

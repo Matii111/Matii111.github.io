@@ -14,7 +14,7 @@ export function TextDisplay({
     }, [text]);
 
     useEffect(() => {
-        if (index < text.length) {
+        if (index < text.length || displayedText.length > text.length) {
             const timeout = setTimeout(() => {
                 const updatedText =
                     text.substring(0, index + 1) +

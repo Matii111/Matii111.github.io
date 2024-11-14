@@ -997,11 +997,32 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
 }
 
 .project-preview-right>img {
   width: 16rem;
   padding-top: 1rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.project-preview-right>img:hover~.previewImageOverlay {
+  background-color: black;
+  width: 100vw;
+  position: fixed;
+  height: 100vh;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: all 0.5s ease-in-out;
+}
+.project-preview-right>img:hover{
+  width: 50rem;
+  transition: all 0.5s ease-in-out;
+  z-index: 99;
+  position: absolute;
 }
 
 .overlay-close-button>.close-svg {

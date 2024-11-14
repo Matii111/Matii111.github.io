@@ -1,4 +1,4 @@
-const PlaceholderIMG = 'https://res.cloudinary.com/dq6ua6vmy/image/upload/v1724443539/1280x720_i3w97x.svg';
+const PlaceholderIMG = 'https://res.cloudinary.com/dq6ua6vmy/image/upload/v1731549866/wip_da0hvh.png';
 const ProjectCardsData = [
     {
         id: 1,
@@ -46,11 +46,8 @@ copy the HEX color and search by specific classes.',
         id: 3,
         title: 'Youtube Music Custom ',
         titleEn: 'Youtube Music Custom',
-        image: 'https://asset.cloudinary.com/dq6ua6vmy/61a82fc3498768cb37d950c690a249d4',
-        image2: 'https://asset.cloudinary.com/dq6ua6vmy/30d11fda5664e3b6ffcb42c691d35add',
-        image3: "https://asset.cloudinary.com/dq6ua6vmy/5b3179cbf5e6b98022274396ee78e170",
-        image4: "https://asset.cloudinary.com/dq6ua6vmy/5b3179cbf5e6b98022274396ee78e170",
-
+        image: 'https://res.cloudinary.com/dq6ua6vmy/image/upload/v1731549887/yt1_vlbsgh.png',
+        image2: 'https://res.cloudinary.com/dq6ua6vmy/image/upload/v1731549887/yt3_qc4fnw.png',
         content: 'Herramienta para personalizar el css o diseño de la \
 interfaz de youtube music, principalmente los colores. App en desarrollo, falta kit para modificar css.',
         contentEn: 'Tool to customize the css or layout of the \
@@ -61,10 +58,8 @@ YouTube music interface, mainly the colors. App in development, missing kit to m
         id: 4,
         title: 'Plataforma para CEIN',
         titleEn: 'CEIN WebPage',
-        image: "https://asset.cloudinary.com/dq6ua6vmy/5b3179cbf5e6b98022274396ee78e170",
-        image2: "",
-        image3: "https://asset.cloudinary.com/dq6ua6vmy/5b3179cbf5e6b98022274396ee78e170",
-        image4: "https://asset.cloudinary.com/dq6ua6vmy/5b3179cbf5e6b98022274396ee78e170",
+        image: PlaceholderIMG,
+        image2: PlaceholderIMG,
         content: 'Plataforma web para centro de alumnos cede \
 informatica UNAB. Unifica las redes sociales relacionadas al centro.',
         contentEn: 'Web page for student center headquarters \
@@ -75,10 +70,8 @@ UNAB computing. Unify social networks related to the center.',
         id: 5,
         title: 'URL-SHORTER',
         titleEn: 'URL-SHORTER',
-        image: "https://asset.cloudinary.com/dq6ua6vmy/5b3179cbf5e6b98022274396ee78e170",
-        image2: "https://asset.cloudinary.com/dq6ua6vmy/5b3179cbf5e6b98022274396ee78e170",
-        image3: "https://asset.cloudinary.com/dq6ua6vmy/5b3179cbf5e6b98022274396ee78e170",
-        image4: "https://asset.cloudinary.com/dq6ua6vmy/5b3179cbf5e6b98022274396ee78e170",
+        image: PlaceholderIMG,
+        image2: PlaceholderIMG,
         content: 'Acortador de url con gestor de las mismas y \
 para dejar citas en apa para copiar y pegar, quizas misma funcion \
 para latex. WIP',

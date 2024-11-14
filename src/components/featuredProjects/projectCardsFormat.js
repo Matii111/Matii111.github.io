@@ -173,6 +173,7 @@ function ProjectFormat({ isTraslatedLanguage }) {
                                 <div className='project-preview-right'>
                                     <img src={project.image} alt="Project" />
                                     <img src={project.image2} alt="Project" />
+                                    <div className='previewImageOverlay'/>
                                 </div>
                             </div>
                             <p onClick={handleProjectClose} className='overlay-close-button'>

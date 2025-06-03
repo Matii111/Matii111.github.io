@@ -1,4 +1,4 @@
-# Briefcase web page 
+# Portfolio web page 
 
 Web Page hosted with Github Pages, developed with JavaScript and React. Mainly academic content, some real projects added.
 

@@ -3,7 +3,7 @@ import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
 import { defineConfig } from "astro/config";
 
-const SITE_URL = "https://mati-dev.cl";
+const SITE_URL = "https://matii111.github.io";
 
 export default defineConfig({
   site: SITE_URL,

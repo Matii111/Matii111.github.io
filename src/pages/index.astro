@@ -1,45 +1,50 @@
 ---
-// Redirección con detección de idioma. Los buscadores siguen la canónica /es
-// (definida en astro.config como defaultLocale). Los usuarios reales son
-// redirigidos según el idioma del navegador o su preferencia guardada.
-const site = Astro.site?.href ?? "/";
-const esURL = new URL("/es", site).href;
-const enURL = new URL("/en", site).href;
+import "@/styles/global.css";
+import WorkInProgress from "@/components/WorkInProgress.jsx";
+
+const canonicalURL = new URL("/", Astro.site).href;
 ---
 
 <!doctype html>
 <html lang="es">
     <head>
         <meta charset="utf-8" />
-        <title>Matías Chaparro | Portafolio</title>
-        <link rel="canonical" href={esURL} />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, viewport-fit=cover"
+        />
+        <title>Matías Chaparro | Work in progress</title>
+        <meta
+            name="description"
+            content="Sitio en construcción. Vuelve pronto."
+        />
+        <meta name="author" content="Matías Chaparro" />
         <meta name="robots" content="noindex, follow" />
-        <meta http-equiv="refresh" content="0; url=/es" />
-        <script>
-            const userLang = navigator.language || "es";
-            const isSpanish = userLang.toLowerCase().startsWith("es");
-            let savedLang = null;
-            try {
-                savedLang = localStorage.getItem("savedLang");
-            } catch (e) {
-                // localStorage puede fallar en modo privado; se ignora.
-            }
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="canonical" href={canonicalURL} />
 
-            const target =
-                savedLang === "en"
-                    ? "/en"
-                    : savedLang === "es" || isSpanish
-                      ? "/es"
-                      : "/en";
-
-            window.location.replace(target);
-        </script>
+        <!-- Color de UI del navegador móvil -->
+        <meta name="theme-color" content="#181818" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     </head>
-    <body>
-        <p>
-            Redirigiendo… Si no eres redirigido automáticamente,
-            <a href="/es">continúa en español</a> o
-            <a href="/en">continue in English</a>.
-        </p>
+    <body class="flex-col content-between">
+        <main
+            class="min-h-[100vh] bg-primary w-full flex flex-col items-center justify-center overflow-x-hidden px-6 text-text-presentation"
+        >
+            <WorkInProgress client:load />
+        </main>
     </body>
 </html>
+
+<script is:inline>
+    const isDark =
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches);
+
+    document.documentElement.classList.toggle("dark", isDark);
+    document.documentElement.style.backgroundColor = "#181818";
+    const themeMeta = document.querySelector('meta[name="theme-color"]');
+    if (themeMeta) themeMeta.setAttribute("content", "#181818");
+</script>
